@@ -1,0 +1,10 @@
+[
+    {"min_days": 7, "max_days": 45, "rate_gen": 3.00, "rate_senior": 3.50},
+    {"min_days": 46, "max_days": 179, "rate_gen": 4.50, "rate_senior": 5.00},
+    {"min_days": 180, "max_days": 210, "rate_gen": 5.25, "rate_senior": 5.75},
+    {"min_days": 211, "max_days": 364, "rate_gen": 5.75, "rate_senior": 6.25},
+    {"min_days": 365, "max_days": 365, "rate_gen": 6.50, "rate_senior": 7.00},
+    {"min_days": 366, "max_days": 730, "rate_gen": 6.80, "rate_senior": 7.30},
+    {"min_days": 731, "max_days": 1095, "rate_gen": 7.00, "rate_senior": 7.50},
+    {"min_days": 1096, "max_days": 1825, "rate_gen": 6.50, "rate_senior": 7.00}
+]

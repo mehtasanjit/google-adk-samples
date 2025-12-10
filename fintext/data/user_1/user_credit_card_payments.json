@@ -1,0 +1,194 @@
+[
+    {
+        "payment_id": "ccp_0",
+        "date": "2025-07-21",
+        "amount": 48415.09,
+        "card_id": "cc_1",
+        "status": "Paid",
+        "due_date": "2025-07-31"
+    },
+    {
+        "payment_id": "ccp_1",
+        "date": "2025-10-15",
+        "amount": 35557.99,
+        "card_id": "cc_1",
+        "status": "Paid",
+        "due_date": "2025-10-20"
+    },
+    {
+        "payment_id": "ccp_2",
+        "date": "2025-06-06",
+        "amount": 33378.98,
+        "card_id": "cc_2",
+        "status": "Paid",
+        "due_date": "2025-06-17"
+    },
+    {
+        "payment_id": "ccp_3",
+        "date": "2024-11-30",
+        "amount": 35550.02,
+        "card_id": "cc_3",
+        "status": "Paid",
+        "due_date": "2024-12-12"
+    },
+    {
+        "payment_id": "ccp_4",
+        "date": "2025-03-24",
+        "amount": 28678.32,
+        "card_id": "cc_1",
+        "status": "Paid",
+        "due_date": "2025-04-06"
+    },
+    {
+        "payment_id": "ccp_5",
+        "date": "2025-03-05",
+        "amount": 45499.58,
+        "card_id": "cc_3",
+        "status": "Paid",
+        "due_date": "2025-03-04"
+    },
+    {
+        "payment_id": "ccp_6",
+        "date": "2025-07-16",
+        "amount": 40547.01,
+        "card_id": "cc_4",
+        "status": "Paid",
+        "due_date": "2025-07-28"
+    },
+    {
+        "payment_id": "ccp_7",
+        "date": "2024-12-30",
+        "amount": 19510.81,
+        "card_id": "cc_1",
+        "status": "Paid",
+        "due_date": "2025-01-10"
+    },
+    {
+        "payment_id": "ccp_8",
+        "date": "2025-08-01",
+        "amount": 22177.03,
+        "card_id": "cc_2",
+        "status": "Paid",
+        "due_date": "2025-08-13"
+    },
+    {
+        "payment_id": "ccp_9",
+        "date": "2024-12-24",
+        "amount": 35377.04,
+        "card_id": "cc_1",
+        "status": "Paid",
+        "due_date": "2024-12-31"
+    },
+    {
+        "payment_id": "ccp_10",
+        "date": "2025-07-28",
+        "amount": 14152.48,
+        "card_id": "cc_2",
+        "status": "Paid",
+        "due_date": "2025-08-05"
+    },
+    {
+        "payment_id": "ccp_11",
+        "date": "2025-07-10",
+        "amount": 35912.65,
+        "card_id": "cc_1",
+        "status": "Paid",
+        "due_date": "2025-07-19"
+    },
+    {
+        "payment_id": "ccp_12",
+        "date": "2025-07-07",
+        "amount": 18507.11,
+        "card_id": "cc_3",
+        "status": "Paid",
+        "due_date": "2025-07-05"
+    },
+    {
+        "payment_id": "ccp_13",
+        "date": "2025-11-19",
+        "amount": 39716.28,
+        "card_id": "cc_1",
+        "status": "Paid",
+        "due_date": "2025-11-30"
+    },
+    {
+        "payment_id": "ccp_14",
+        "date": "2025-05-23",
+        "amount": 17712.47,
+        "card_id": "cc_1",
+        "status": "Paid",
+        "due_date": "2025-06-06"
+    },
+    {
+        "payment_id": "ccp_15",
+        "date": "2025-06-08",
+        "amount": 45682.84,
+        "card_id": "cc_2",
+        "status": "Paid",
+        "due_date": "2025-06-15"
+    },
+    {
+        "payment_id": "ccp_16",
+        "date": "2025-09-03",
+        "amount": 19232.95,
+        "card_id": "cc_2",
+        "status": "Paid",
+        "due_date": "2025-09-12"
+    },
+    {
+        "payment_id": "ccp_17",
+        "date": "2025-08-27",
+        "amount": 42333.49,
+        "card_id": "cc_3",
+        "status": "Paid",
+        "due_date": "2025-09-10"
+    },
+    {
+        "payment_id": "ccp_18",
+        "date": "2025-01-02",
+        "amount": 40244.31,
+        "card_id": "cc_3",
+        "status": "Paid",
+        "due_date": "2025-01-16"
+    },
+    {
+        "payment_id": "ccp_19",
+        "date": "2025-07-06",
+        "amount": 13456.14,
+        "card_id": "cc_2",
+        "status": "Paid",
+        "due_date": "2025-07-13"
+    },
+    {
+        "payment_id": "ccp_20",
+        "date": "2025-04-26",
+        "amount": 22408.35,
+        "card_id": "cc_1",
+        "status": "Paid",
+        "due_date": "2025-04-25"
+    },
+    {
+        "payment_id": "ccp_21",
+        "date": "2025-06-28",
+        "amount": 40167.12,
+        "card_id": "cc_3",
+        "status": "Paid",
+        "due_date": "2025-07-09"
+    },
+    {
+        "payment_id": "ccp_22",
+        "date": "2025-07-18",
+        "amount": 11061.14,
+        "card_id": "cc_4",
+        "status": "Paid",
+        "due_date": "2025-07-28"
+    },
+    {
+        "payment_id": "ccp_23",
+        "date": "2025-10-19",
+        "amount": 10052.81,
+        "card_id": "cc_1",
+        "status": "Paid",
+        "due_date": "2025-11-03"
+    }
+]

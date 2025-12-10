@@ -1,0 +1,146 @@
+[
+    {
+        "date": "2020-01-15",
+        "symbol": "RELIANCE",
+        "type": "BUY",
+        "quantity": 200,
+        "price": 1500.0,
+        "total_amount": 300000.0
+    },
+    {
+        "date": "2022-06-10",
+        "symbol": "RELIANCE",
+        "type": "BUY",
+        "quantity": 300,
+        "price": 2400.0,
+        "total_amount": 720000.0
+    },
+    {
+        "date": "2022-05-10",
+        "symbol": "ITC",
+        "type": "BUY",
+        "quantity": 500,
+        "price": 250.0,
+        "total_amount": 125000.0
+    },
+    {
+        "date": "2018-01-15",
+        "symbol": "TCS",
+        "type": "BUY",
+        "quantity": 100,
+        "price": 2000.0,
+        "total_amount": 200000.0
+    },
+    {
+        "date": "2019-06-10",
+        "symbol": "TCS",
+        "type": "SELL",
+        "quantity": 100,
+        "price": 2500.0,
+        "total_amount": 250000.0
+    },
+    {
+        "date": "2017-03-20",
+        "symbol": "ITC",
+        "type": "BUY",
+        "quantity": 500,
+        "price": 100.0,
+        "total_amount": 50000.0
+    },
+    {
+        "date": "2018-09-15",
+        "symbol": "ITC",
+        "type": "SELL",
+        "quantity": 500,
+        "price": 150.0,
+        "total_amount": 75000.0
+    },
+    {
+        "date": "2015-05-10",
+        "symbol": "RELIANCE",
+        "type": "BUY",
+        "quantity": 200,
+        "price": 500.0,
+        "total_amount": 100000.0
+    },
+    {
+        "date": "2016-11-20",
+        "symbol": "RELIANCE",
+        "type": "SELL",
+        "quantity": 200,
+        "price": 800.0,
+        "total_amount": 160000.0
+    },
+    {
+        "date": "2023-01-20",
+        "symbol": "TCS",
+        "type": "BUY",
+        "quantity": 200,
+        "price": 3200.0,
+        "total_amount": 640000.0
+    },
+    {
+        "date": "2021-03-15",
+        "symbol": "INFY",
+        "type": "BUY",
+        "quantity": 1000,
+        "price": 1500.0,
+        "total_amount": 1500000.0
+    },
+    {
+        "date": "2023-05-10",
+        "symbol": "INFY",
+        "type": "SELL",
+        "quantity": 500,
+        "price": 1600.0,
+        "total_amount": 800000.0
+    },
+    {
+        "date": "2019-11-05",
+        "symbol": "HDFCBANK",
+        "type": "BUY",
+        "quantity": 500,
+        "price": 1200.0,
+        "total_amount": 600000.0
+    },
+    {
+        "date": "2021-08-20",
+        "symbol": "HDFCBANK",
+        "type": "BUY",
+        "quantity": 500,
+        "price": 1500.0,
+        "total_amount": 750000.0
+    },
+    {
+        "date": "2022-02-10",
+        "symbol": "ICICIBANK",
+        "type": "BUY",
+        "quantity": 800,
+        "price": 700.0,
+        "total_amount": 560000.0
+    },
+    {
+        "date": "2020-06-15",
+        "symbol": "TATAMOTORS",
+        "type": "BUY",
+        "quantity": 1000,
+        "price": 150.0,
+        "total_amount": 150000.0
+    },
+    {
+        "date": "2023-03-25",
+        "symbol": "TATAMOTORS",
+        "type": "SELL",
+        "quantity": 500,
+        "price": 450.0,
+        "total_amount": 225000.0
+    },
+    {
+        "date": "2021-01-10",
+        "symbol": "SBIN",
+        "type": "BUY",
+        "quantity": 1200,
+        "price": 300.0,
+        "total_amount": 360000.0
+    }
+]

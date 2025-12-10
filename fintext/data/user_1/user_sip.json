@@ -1,0 +1,26 @@
+[
+    {
+        "fund_name": "HDFC Mid-Cap Opportunities Fund",
+        "amount": 5000,
+        "frequency": "Monthly",
+        "date_of_month": 5,
+        "start_date": "2022-11-01",
+        "status": "Active"
+    },
+    {
+        "fund_name": "Axis Bluechip Fund",
+        "amount": 10000,
+        "frequency": "Monthly",
+        "date_of_month": 5,
+        "start_date": "2022-11-01",
+        "status": "Active"
+    },
+    {
+        "fund_name": "Parag Parikh Flexi Cap Fund",
+        "amount": 7500,
+        "frequency": "Monthly",
+        "date_of_month": 5,
+        "start_date": "2022-11-01",
+        "status": "Active"
+    }
+]

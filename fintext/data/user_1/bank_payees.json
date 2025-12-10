@@ -1,0 +1,20 @@
+[
+    {
+        "payee_id": "p_1",
+        "name": "Airtel",
+        "account_number": "1234567890",
+        "bank_name": "SBI"
+    },
+    {
+        "payee_id": "p_2",
+        "name": "Bescom",
+        "account_number": "0987654321",
+        "bank_name": "Canara Bank"
+    },
+    {
+        "payee_id": "p_3",
+        "name": "Adani Gas",
+        "account_number": "1122334455",
+        "bank_name": "ICICI"
+    }
+]

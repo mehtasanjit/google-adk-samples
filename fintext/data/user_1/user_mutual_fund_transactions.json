@@ -1,0 +1,866 @@
+[
+    {
+        "date": "2022-11-05",
+        "symbol": "HDFC Mid-Cap Opportunities Fund",
+        "type": "BUY",
+        "units": 49.87090412383408,
+        "nav": 100.25886010778021,
+        "total_amount": 5000
+    },
+    {
+        "date": "2022-12-05",
+        "symbol": "HDFC Mid-Cap Opportunities Fund",
+        "type": "BUY",
+        "units": 48.17722448338343,
+        "nav": 103.78347971715401,
+        "total_amount": 5000
+    },
+    {
+        "date": "2023-01-05",
+        "symbol": "HDFC Mid-Cap Opportunities Fund",
+        "type": "BUY",
+        "units": 47.37416023932338,
+        "nav": 105.54276792962973,
+        "total_amount": 5000
+    },
+    {
+        "date": "2023-02-05",
+        "symbol": "HDFC Mid-Cap Opportunities Fund",
+        "type": "BUY",
+        "units": 46.439511186429336,
+        "nav": 107.66693861026495,
+        "total_amount": 5000
+    },
+    {
+        "date": "2023-03-05",
+        "symbol": "HDFC Mid-Cap Opportunities Fund",
+        "type": "BUY",
+        "units": 44.18722408243535,
+        "nav": 113.15487912687246,
+        "total_amount": 5000
+    },
+    {
+        "date": "2023-04-05",
+        "symbol": "HDFC Mid-Cap Opportunities Fund",
+        "type": "BUY",
+        "units": 43.040065899938725,
+        "nav": 116.17082584455612,
+        "total_amount": 5000
+    },
+    {
+        "date": "2023-05-05",
+        "symbol": "HDFC Mid-Cap Opportunities Fund",
+        "type": "BUY",
+        "units": 42.598494593768045,
+        "nav": 117.37503983841428,
+        "total_amount": 5000
+    },
+    {
+        "date": "2023-06-05",
+        "symbol": "HDFC Mid-Cap Opportunities Fund",
+        "type": "BUY",
+        "units": 41.30647706184548,
+        "nav": 121.04639164733966,
+        "total_amount": 5000
+    },
+    {
+        "date": "2023-07-05",
+        "symbol": "HDFC Mid-Cap Opportunities Fund",
+        "type": "BUY",
+        "units": 39.25404082530638,
+        "nav": 127.3754216095019,
+        "total_amount": 5000
+    },
+    {
+        "date": "2023-08-05",
+        "symbol": "HDFC Mid-Cap Opportunities Fund",
+        "type": "BUY",
+        "units": 39.2518770204625,
+        "nav": 127.3824433260462,
+        "total_amount": 5000
+    },
+    {
+        "date": "2023-09-05",
+        "symbol": "HDFC Mid-Cap Opportunities Fund",
+        "type": "BUY",
+        "units": 37.14811541939345,
+        "nav": 134.59632994974794,
+        "total_amount": 5000
+    },
+    {
+        "date": "2023-10-05",
+        "symbol": "HDFC Mid-Cap Opportunities Fund",
+        "type": "BUY",
+        "units": 38.99282845549796,
+        "nav": 128.22870763803246,
+        "total_amount": 5000
+    },
+    {
+        "date": "2023-11-05",
+        "symbol": "HDFC Mid-Cap Opportunities Fund",
+        "type": "BUY",
+        "units": 36.889367528913034,
+        "nav": 135.5404100132949,
+        "total_amount": 5000
+    },
+    {
+        "date": "2023-12-05",
+        "symbol": "HDFC Mid-Cap Opportunities Fund",
+        "type": "BUY",
+        "units": 34.832456051025204,
+        "nav": 143.5442850390918,
+        "total_amount": 5000
+    },
+    {
+        "date": "2024-01-05",
+        "symbol": "HDFC Mid-Cap Opportunities Fund",
+        "type": "BUY",
+        "units": 34.77233937628679,
+        "nav": 143.79245370559627,
+        "total_amount": 5000
+    },
+    {
+        "date": "2024-02-05",
+        "symbol": "HDFC Mid-Cap Opportunities Fund",
+        "type": "BUY",
+        "units": 34.371742078953275,
+        "nav": 145.46833234448223,
+        "total_amount": 5000
+    },
+    {
+        "date": "2024-03-05",
+        "symbol": "HDFC Mid-Cap Opportunities Fund",
+        "type": "BUY",
+        "units": 33.25868000172175,
+        "nav": 150.33669405223412,
+        "total_amount": 5000
+    },
+    {
+        "date": "2024-04-05",
+        "symbol": "HDFC Mid-Cap Opportunities Fund",
+        "type": "BUY",
+        "units": 33.95729088630083,
+        "nav": 147.24378386784434,
+        "total_amount": 5000
+    },
+    {
+        "date": "2024-05-05",
+        "symbol": "HDFC Mid-Cap Opportunities Fund",
+        "type": "BUY",
+        "units": 30.98696702656513,
+        "nav": 161.35816053612152,
+        "total_amount": 5000
+    },
+    {
+        "date": "2024-06-05",
+        "symbol": "HDFC Mid-Cap Opportunities Fund",
+        "type": "BUY",
+        "units": 30.85302520353566,
+        "nav": 162.0586625465504,
+        "total_amount": 5000
+    },
+    {
+        "date": "2024-07-05",
+        "symbol": "HDFC Mid-Cap Opportunities Fund",
+        "type": "BUY",
+        "units": 31.796488430296453,
+        "nav": 157.2500690118938,
+        "total_amount": 5000
+    },
+    {
+        "date": "2024-08-05",
+        "symbol": "HDFC Mid-Cap Opportunities Fund",
+        "type": "BUY",
+        "units": 32.30499863556759,
+        "nav": 154.77480919918793,
+        "total_amount": 5000
+    },
+    {
+        "date": "2024-09-05",
+        "symbol": "HDFC Mid-Cap Opportunities Fund",
+        "type": "BUY",
+        "units": 29.453619578928592,
+        "nav": 169.75842261428028,
+        "total_amount": 5000
+    },
+    {
+        "date": "2024-10-05",
+        "symbol": "HDFC Mid-Cap Opportunities Fund",
+        "type": "BUY",
+        "units": 30.755645765519564,
+        "nav": 162.5717774915182,
+        "total_amount": 5000
+    },
+    {
+        "date": "2024-11-05",
+        "symbol": "HDFC Mid-Cap Opportunities Fund",
+        "type": "BUY",
+        "units": 29.415929134722163,
+        "nav": 169.97593300896514,
+        "total_amount": 5000
+    },
+    {
+        "date": "2024-12-05",
+        "symbol": "HDFC Mid-Cap Opportunities Fund",
+        "type": "BUY",
+        "units": 26.770220523805836,
+        "nav": 186.7747034640104,
+        "total_amount": 5000
+    },
+    {
+        "date": "2025-01-05",
+        "symbol": "HDFC Mid-Cap Opportunities Fund",
+        "type": "BUY",
+        "units": 29.40784815540432,
+        "nav": 170.02264067665703,
+        "total_amount": 5000
+    },
+    {
+        "date": "2025-02-05",
+        "symbol": "HDFC Mid-Cap Opportunities Fund",
+        "type": "BUY",
+        "units": 29.769124217604652,
+        "nav": 167.95925749952482,
+        "total_amount": 5000
+    },
+    {
+        "date": "2025-03-05",
+        "symbol": "HDFC Mid-Cap Opportunities Fund",
+        "type": "BUY",
+        "units": 28.98100132930041,
+        "nav": 172.52682000828224,
+        "total_amount": 5000
+    },
+    {
+        "date": "2025-04-05",
+        "symbol": "HDFC Mid-Cap Opportunities Fund",
+        "type": "BUY",
+        "units": 29.271892828664175,
+        "nav": 170.81232256712164,
+        "total_amount": 5000
+    },
+    {
+        "date": "2025-05-05",
+        "symbol": "HDFC Mid-Cap Opportunities Fund",
+        "type": "BUY",
+        "units": 28.662811341515514,
+        "nav": 174.4420650307232,
+        "total_amount": 5000
+    },
+    {
+        "date": "2025-06-05",
+        "symbol": "HDFC Mid-Cap Opportunities Fund",
+        "type": "BUY",
+        "units": 24.983812481150533,
+        "nav": 200.12958405657008,
+        "total_amount": 5000
+    },
+    {
+        "date": "2025-07-05",
+        "symbol": "HDFC Mid-Cap Opportunities Fund",
+        "type": "BUY",
+        "units": 27.514314047275413,
+        "nav": 181.72359272373436,
+        "total_amount": 5000
+    },
+    {
+        "date": "2025-08-05",
+        "symbol": "HDFC Mid-Cap Opportunities Fund",
+        "type": "BUY",
+        "units": 25.883836108310064,
+        "nav": 193.1707486895553,
+        "total_amount": 5000
+    },
+    {
+        "date": "2025-09-05",
+        "symbol": "HDFC Mid-Cap Opportunities Fund",
+        "type": "BUY",
+        "units": 22.439440718238544,
+        "nav": 222.82195277425308,
+        "total_amount": 5000
+    },
+    {
+        "date": "2025-10-05",
+        "symbol": "HDFC Mid-Cap Opportunities Fund",
+        "type": "BUY",
+        "units": 25.002453384452213,
+        "nav": 199.98037485030378,
+        "total_amount": 5000
+    },
+    {
+        "date": "2022-11-05",
+        "symbol": "Axis Bluechip Fund",
+        "type": "BUY",
+        "units": 199.42194358843778,
+        "nav": 50.14493300014045,
+        "total_amount": 10000
+    },
+    {
+        "date": "2022-12-05",
+        "symbol": "Axis Bluechip Fund",
+        "type": "BUY",
+        "units": 193.22415695236955,
+        "nav": 51.75336333575018,
+        "total_amount": 10000
+    },
+    {
+        "date": "2023-01-05",
+        "symbol": "Axis Bluechip Fund",
+        "type": "BUY",
+        "units": 187.839164753209,
+        "nav": 53.237033997347794,
+        "total_amount": 10000
+    },
+    {
+        "date": "2023-02-05",
+        "symbol": "Axis Bluechip Fund",
+        "type": "BUY",
+        "units": 179.57147946341274,
+        "nav": 55.688130597807294,
+        "total_amount": 10000
+    },
+    {
+        "date": "2023-03-05",
+        "symbol": "Axis Bluechip Fund",
+        "type": "BUY",
+        "units": 181.77476690601875,
+        "nav": 55.013136147605145,
+        "total_amount": 10000
+    },
+    {
+        "date": "2023-04-05",
+        "symbol": "Axis Bluechip Fund",
+        "type": "BUY",
+        "units": 172.0304365256046,
+        "nav": 58.12924853278288,
+        "total_amount": 10000
+    },
+    {
+        "date": "2023-05-05",
+        "symbol": "Axis Bluechip Fund",
+        "type": "BUY",
+        "units": 164.77128467249557,
+        "nav": 60.69018652052331,
+        "total_amount": 10000
+    },
+    {
+        "date": "2023-06-05",
+        "symbol": "Axis Bluechip Fund",
+        "type": "BUY",
+        "units": 168.32934206112273,
+        "nav": 59.407349173674426,
+        "total_amount": 10000
+    },
+    {
+        "date": "2023-07-05",
+        "symbol": "Axis Bluechip Fund",
+        "type": "BUY",
+        "units": 166.34928819394693,
+        "nav": 60.114474240136104,
+        "total_amount": 10000
+    },
+    {
+        "date": "2023-08-05",
+        "symbol": "Axis Bluechip Fund",
+        "type": "BUY",
+        "units": 152.8200722615946,
+        "nav": 65.43643025428089,
+        "total_amount": 10000
+    },
+    {
+        "date": "2023-09-05",
+        "symbol": "Axis Bluechip Fund",
+        "type": "BUY",
+        "units": 151.6909442117285,
+        "nav": 65.92351344350598,
+        "total_amount": 10000
+    },
+    {
+        "date": "2023-10-05",
+        "symbol": "Axis Bluechip Fund",
+        "type": "BUY",
+        "units": 147.12681594825847,
+        "nav": 67.9685748349016,
+        "total_amount": 10000
+    },
+    {
+        "date": "2023-11-05",
+        "symbol": "Axis Bluechip Fund",
+        "type": "BUY",
+        "units": 152.32400868293172,
+        "nav": 65.64953277204899,
+        "total_amount": 10000
+    },
+    {
+        "date": "2023-12-05",
+        "symbol": "Axis Bluechip Fund",
+        "type": "BUY",
+        "units": 146.65508755515546,
+        "nav": 68.18720145824538,
+        "total_amount": 10000
+    },
+    {
+        "date": "2024-01-05",
+        "symbol": "Axis Bluechip Fund",
+        "type": "BUY",
+        "units": 145.42576809522254,
+        "nav": 68.76360449031395,
+        "total_amount": 10000
+    },
+    {
+        "date": "2024-02-05",
+        "symbol": "Axis Bluechip Fund",
+        "type": "BUY",
+        "units": 130.90885136146116,
+        "nav": 76.38902867147107,
+        "total_amount": 10000
+    },
+    {
+        "date": "2024-03-05",
+        "symbol": "Axis Bluechip Fund",
+        "type": "BUY",
+        "units": 142.72779045779438,
+        "nav": 70.06344011860165,
+        "total_amount": 10000
+    },
+    {
+        "date": "2024-04-05",
+        "symbol": "Axis Bluechip Fund",
+        "type": "BUY",
+        "units": 136.38188185487482,
+        "nav": 73.3235226262759,
+        "total_amount": 10000
+    },
+    {
+        "date": "2024-05-05",
+        "symbol": "Axis Bluechip Fund",
+        "type": "BUY",
+        "units": 133.65024312633147,
+        "nav": 74.82216093350168,
+        "total_amount": 10000
+    },
+    {
+        "date": "2024-06-05",
+        "symbol": "Axis Bluechip Fund",
+        "type": "BUY",
+        "units": 123.11721642994247,
+        "nav": 81.22340879669181,
+        "total_amount": 10000
+    },
+    {
+        "date": "2024-07-05",
+        "symbol": "Axis Bluechip Fund",
+        "type": "BUY",
+        "units": 118.28086314373023,
+        "nav": 84.54453014811361,
+        "total_amount": 10000
+    },
+    {
+        "date": "2024-08-05",
+        "symbol": "Axis Bluechip Fund",
+        "type": "BUY",
+        "units": 117.58890099669412,
+        "nav": 85.04203981191336,
+        "total_amount": 10000
+    },
+    {
+        "date": "2024-09-05",
+        "symbol": "Axis Bluechip Fund",
+        "type": "BUY",
+        "units": 119.96565766638896,
+        "nav": 83.35718900328024,
+        "total_amount": 10000
+    },
+    {
+        "date": "2024-10-05",
+        "symbol": "Axis Bluechip Fund",
+        "type": "BUY",
+        "units": 110.56873391847436,
+        "nav": 90.44148056695032,
+        "total_amount": 10000
+    },
+    {
+        "date": "2024-11-05",
+        "symbol": "Axis Bluechip Fund",
+        "type": "BUY",
+        "units": 111.82163867513472,
+        "nav": 89.42812964002516,
+        "total_amount": 10000
+    },
+    {
+        "date": "2024-12-05",
+        "symbol": "Axis Bluechip Fund",
+        "type": "BUY",
+        "units": 118.61124164948214,
+        "nav": 84.30904070249787,
+        "total_amount": 10000
+    },
+    {
+        "date": "2025-01-05",
+        "symbol": "Axis Bluechip Fund",
+        "type": "BUY",
+        "units": 106.10480337683818,
+        "nav": 94.24644013979596,
+        "total_amount": 10000
+    },
+    {
+        "date": "2025-02-05",
+        "symbol": "Axis Bluechip Fund",
+        "type": "BUY",
+        "units": 100.6438981763991,
+        "nav": 99.3602213466826,
+        "total_amount": 10000
+    },
+    {
+        "date": "2025-03-05",
+        "symbol": "Axis Bluechip Fund",
+        "type": "BUY",
+        "units": 105.30379672131063,
+        "nav": 94.96333761322275,
+        "total_amount": 10000
+    },
+    {
+        "date": "2025-04-05",
+        "symbol": "Axis Bluechip Fund",
+        "type": "BUY",
+        "units": 114.69969838098253,
+        "nav": 87.1841874142018,
+        "total_amount": 10000
+    },
+    {
+        "date": "2025-05-05",
+        "symbol": "Axis Bluechip Fund",
+        "type": "BUY",
+        "units": 112.9588496562249,
+        "nav": 88.5278137165318,
+        "total_amount": 10000
+    },
+    {
+        "date": "2025-06-05",
+        "symbol": "Axis Bluechip Fund",
+        "type": "BUY",
+        "units": 93.67048900396075,
+        "nav": 106.75720930182355,
+        "total_amount": 10000
+    },
+    {
+        "date": "2025-07-05",
+        "symbol": "Axis Bluechip Fund",
+        "type": "BUY",
+        "units": 97.34137918607368,
+        "nav": 102.73123396869508,
+        "total_amount": 10000
+    },
+    {
+        "date": "2025-08-05",
+        "symbol": "Axis Bluechip Fund",
+        "type": "BUY",
+        "units": 104.23716283534931,
+        "nav": 95.93507467001741,
+        "total_amount": 10000
+    },
+    {
+        "date": "2025-09-05",
+        "symbol": "Axis Bluechip Fund",
+        "type": "BUY",
+        "units": 89.16490565643588,
+        "nav": 112.1517476677575,
+        "total_amount": 10000
+    },
+    {
+        "date": "2025-10-05",
+        "symbol": "Axis Bluechip Fund",
+        "type": "BUY",
+        "units": 107.60473190011854,
+        "nav": 92.93271609358457,
+        "total_amount": 10000
+    },
+    {
+        "date": "2022-11-05",
+        "symbol": "Parag Parikh Flexi Cap Fund",
+        "type": "BUY",
+        "units": 124.56452213286684,
+        "nav": 60.209760143422855,
+        "total_amount": 7500
+    },
+    {
+        "date": "2022-12-05",
+        "symbol": "Parag Parikh Flexi Cap Fund",
+        "type": "BUY",
+        "units": 120.49291686874373,
+        "nav": 62.24432269466891,
+        "total_amount": 7500
+    },
+    {
+        "date": "2023-01-05",
+        "symbol": "Parag Parikh Flexi Cap Fund",
+        "type": "BUY",
+        "units": 118.63434015230294,
+        "nav": 63.21946908771515,
+        "total_amount": 7500
+    },
+    {
+        "date": "2023-02-05",
+        "symbol": "Parag Parikh Flexi Cap Fund",
+        "type": "BUY",
+        "units": 113.44418534074688,
+        "nav": 66.11180623733696,
+        "total_amount": 7500
+    },
+    {
+        "date": "2023-03-05",
+        "symbol": "Parag Parikh Flexi Cap Fund",
+        "type": "BUY",
+        "units": 113.67516917140621,
+        "nav": 65.97746943917939,
+        "total_amount": 7500
+    },
+    {
+        "date": "2023-04-05",
+        "symbol": "Parag Parikh Flexi Cap Fund",
+        "type": "BUY",
+        "units": 110.98808018879103,
+        "nav": 67.57482413645212,
+        "total_amount": 7500
+    },
+    {
+        "date": "2023-05-05",
+        "symbol": "Parag Parikh Flexi Cap Fund",
+        "type": "BUY",
+        "units": 103.33639868073212,
+        "nav": 72.57849214556026,
+        "total_amount": 7500
+    },
+    {
+        "date": "2023-06-05",
+        "symbol": "Parag Parikh Flexi Cap Fund",
+        "type": "BUY",
+        "units": 102.4888302307332,
+        "nav": 73.17870623672104,
+        "total_amount": 7500
+    },
+    {
+        "date": "2023-07-05",
+        "symbol": "Parag Parikh Flexi Cap Fund",
+        "type": "BUY",
+        "units": 97.6866838009935,
+        "nav": 76.77607334157169,
+        "total_amount": 7500
+    },
+    {
+        "date": "2023-08-05",
+        "symbol": "Parag Parikh Flexi Cap Fund",
+        "type": "BUY",
+        "units": 94.54647350119349,
+        "nav": 79.32606814684976,
+        "total_amount": 7500
+    },
+    {
+        "date": "2023-09-05",
+        "symbol": "Parag Parikh Flexi Cap Fund",
+        "type": "BUY",
+        "units": 92.93744377692404,
+        "nav": 80.69944357413257,
+        "total_amount": 7500
+    },
+    {
+        "date": "2023-10-05",
+        "symbol": "Parag Parikh Flexi Cap Fund",
+        "type": "BUY",
+        "units": 92.52704812557404,
+        "nav": 81.05737891714969,
+        "total_amount": 7500
+    },
+    {
+        "date": "2023-11-05",
+        "symbol": "Parag Parikh Flexi Cap Fund",
+        "type": "BUY",
+        "units": 93.21843024460377,
+        "nav": 80.45619283997931,
+        "total_amount": 7500
+    },
+    {
+        "date": "2023-12-05",
+        "symbol": "Parag Parikh Flexi Cap Fund",
+        "type": "BUY",
+        "units": 88.45387526316885,
+        "nav": 84.78995383397195,
+        "total_amount": 7500
+    },
+    {
+        "date": "2024-01-05",
+        "symbol": "Parag Parikh Flexi Cap Fund",
+        "type": "BUY",
+        "units": 84.36663882774862,
+        "nav": 88.89769823961758,
+        "total_amount": 7500
+    },
+    {
+        "date": "2024-02-05",
+        "symbol": "Parag Parikh Flexi Cap Fund",
+        "type": "BUY",
+        "units": 84.97893225991753,
+        "nav": 88.25716916588708,
+        "total_amount": 7500
+    },
+    {
+        "date": "2024-03-05",
+        "symbol": "Parag Parikh Flexi Cap Fund",
+        "type": "BUY",
+        "units": 80.23917397493703,
+        "nav": 93.47055345239035,
+        "total_amount": 7500
+    },
+    {
+        "date": "2024-04-05",
+        "symbol": "Parag Parikh Flexi Cap Fund",
+        "type": "BUY",
+        "units": 80.05110444356987,
+        "nav": 93.69015021256762,
+        "total_amount": 7500
+    },
+    {
+        "date": "2024-05-05",
+        "symbol": "Parag Parikh Flexi Cap Fund",
+        "type": "BUY",
+        "units": 76.35901733261855,
+        "nav": 98.22022679168501,
+        "total_amount": 7500
+    },
+    {
+        "date": "2024-06-05",
+        "symbol": "Parag Parikh Flexi Cap Fund",
+        "type": "BUY",
+        "units": 84.95083253371034,
+        "nav": 88.28636255005314,
+        "total_amount": 7500
+    },
+    {
+        "date": "2024-07-05",
+        "symbol": "Parag Parikh Flexi Cap Fund",
+        "type": "BUY",
+        "units": 73.82749435529045,
+        "nav": 101.58816936013963,
+        "total_amount": 7500
+    },
+    {
+        "date": "2024-08-05",
+        "symbol": "Parag Parikh Flexi Cap Fund",
+        "type": "BUY",
+        "units": 78.0315554434931,
+        "nav": 96.11496217618215,
+        "total_amount": 7500
+    },
+    {
+        "date": "2024-09-05",
+        "symbol": "Parag Parikh Flexi Cap Fund",
+        "type": "BUY",
+        "units": 74.44797086569238,
+        "nav": 100.7414965483794,
+        "total_amount": 7500
+    },
+    {
+        "date": "2024-10-05",
+        "symbol": "Parag Parikh Flexi Cap Fund",
+        "type": "BUY",
+        "units": 69.45852362929107,
+        "nav": 107.97810849001701,
+        "total_amount": 7500
+    },
+    {
+        "date": "2024-11-05",
+        "symbol": "Parag Parikh Flexi Cap Fund",
+        "type": "BUY",
+        "units": 72.34893549150793,
+        "nav": 103.66427576367484,
+        "total_amount": 7500
+    },
+    {
+        "date": "2024-12-05",
+        "symbol": "Parag Parikh Flexi Cap Fund",
+        "type": "BUY",
+        "units": 73.59955691704484,
+        "nav": 101.90278738299148,
+        "total_amount": 7500
+    },
+    {
+        "date": "2025-01-05",
+        "symbol": "Parag Parikh Flexi Cap Fund",
+        "type": "BUY",
+        "units": 67.1603585915144,
+        "nav": 111.67301898455935,
+        "total_amount": 7500
+    },
+    {
+        "date": "2025-02-05",
+        "symbol": "Parag Parikh Flexi Cap Fund",
+        "type": "BUY",
+        "units": 72.29593828081605,
+        "nav": 103.74026782622377,
+        "total_amount": 7500
+    },
+    {
+        "date": "2025-03-05",
+        "symbol": "Parag Parikh Flexi Cap Fund",
+        "type": "BUY",
+        "units": 69.76144554489777,
+        "nav": 107.50924011706546,
+        "total_amount": 7500
+    },
+    {
+        "date": "2025-04-05",
+        "symbol": "Parag Parikh Flexi Cap Fund",
+        "type": "BUY",
+        "units": 62.170611368402184,
+        "nav": 120.63577685536204,
+        "total_amount": 7500
+    },
+    {
+        "date": "2025-05-05",
+        "symbol": "Parag Parikh Flexi Cap Fund",
+        "type": "BUY",
+        "units": 65.26265618790427,
+        "nav": 114.92023828153725,
+        "total_amount": 7500
+    },
+    {
+        "date": "2025-06-05",
+        "symbol": "Parag Parikh Flexi Cap Fund",
+        "type": "BUY",
+        "units": 60.50982894626423,
+        "nav": 123.94680551254537,
+        "total_amount": 7500
+    },
+    {
+        "date": "2025-07-05",
+        "symbol": "Parag Parikh Flexi Cap Fund",
+        "type": "BUY",
+        "units": 58.67199846080237,
+        "nav": 127.82929159998879,
+        "total_amount": 7500
+    },
+    {
+        "date": "2025-08-05",
+        "symbol": "Parag Parikh Flexi Cap Fund",
+        "type": "BUY",
+        "units": 66.13700175854184,
+        "nav": 113.40096769704785,
+        "total_amount": 7500
+    },
+    {
+        "date": "2025-09-05",
+        "symbol": "Parag Parikh Flexi Cap Fund",
+        "type": "BUY",
+        "units": 58.5255026540352,
+        "nav": 128.14926245631983,
+        "total_amount": 7500
+    },
+    {
+        "date": "2025-10-05",
+        "symbol": "Parag Parikh Flexi Cap Fund",
+        "type": "BUY",
+        "units": 54.78931481788365,
+        "nav": 136.8880049865479,
+        "total_amount": 7500
+    }
+]

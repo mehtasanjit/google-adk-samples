@@ -1,0 +1,32 @@
+[
+    {
+        "account_id": "acc_fincorp_1",
+        "bank_name": "FinCorp Bank",
+        "account_type": "Savings",
+        "balance": 5000000.0,
+        "currency": "INR",
+        "account_number": "1234567890",
+        "ifsc_code": "FNCB0001234",
+        "branch": "Mumbai Main"
+    },
+    {
+        "account_id": "acc_fincorp_2",
+        "bank_name": "FinCorp Bank",
+        "account_type": "Joint",
+        "balance": 2000000.0,
+        "currency": "INR",
+        "account_number": "0987654321",
+        "ifsc_code": "FNCB0001234",
+        "branch": "Mumbai Main"
+    },
+    {
+        "account_id": "acc_fincorp_3",
+        "bank_name": "FinCorp Bank",
+        "account_type": "Savings",
+        "balance": 1500000.0,
+        "currency": "INR",
+        "account_number": "1122334455",
+        "ifsc_code": "FNCB0001234",
+        "branch": "Delhi Branch"
+    }
+]

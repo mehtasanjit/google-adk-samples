@@ -1,0 +1,122 @@
+[
+    {
+        "symbol": "RELIANCE",
+        "lots": [
+            {
+                "quantity": 200,
+                "purchase_date": "2020-01-15",
+                "purchase_price": 1500.0
+            },
+            {
+                "quantity": 300,
+                "purchase_date": "2022-06-10",
+                "purchase_price": 2400.0
+            }
+        ]
+    },
+    {
+        "symbol": "TCS",
+        "lots": [
+            {
+                "quantity": 200,
+                "purchase_date": "2023-01-20",
+                "purchase_price": 3200.0
+            }
+        ]
+    },
+    {
+        "symbol": "INFY",
+        "lots": [
+            {
+                "quantity": 500,
+                "purchase_date": "2021-03-15",
+                "purchase_price": 1500.0
+            }
+        ]
+    },
+    {
+        "symbol": "HDFCBANK",
+        "lots": [
+            {
+                "quantity": 500,
+                "purchase_date": "2019-11-05",
+                "purchase_price": 1200.0
+            },
+            {
+                "quantity": 500,
+                "purchase_date": "2021-08-20",
+                "purchase_price": 1500.0
+            }
+        ]
+    },
+    {
+        "symbol": "ICICIBANK",
+        "lots": [
+            {
+                "quantity": 800,
+                "purchase_date": "2022-02-10",
+                "purchase_price": 700.0
+            }
+        ]
+    },
+    {
+        "symbol": "TATAMOTORS",
+        "lots": [
+            {
+                "quantity": 500,
+                "purchase_date": "2020-06-15",
+                "purchase_price": 150.0
+            }
+        ]
+    },
+    {
+        "symbol": "SBIN",
+        "lots": [
+            {
+                "quantity": 1200,
+                "purchase_date": "2021-01-10",
+                "purchase_price": 300.0
+            }
+        ]
+    },
+    {
+        "symbol": "ASIANPAINT",
+        "lots": [
+            {
+                "quantity": 100,
+                "purchase_date": "2018-04-10",
+                "purchase_price": 1200.0
+            },
+            {
+                "quantity": 100,
+                "purchase_date": "2021-09-15",
+                "purchase_price": 3000.0
+            }
+        ]
+    },
+    {
+        "symbol": "TITAN",
+        "lots": [
+            {
+                "quantity": 200,
+                "purchase_date": "2019-12-05",
+                "purchase_price": 1100.0
+            }
+        ]
+    },
+    {
+        "symbol": "ITC",
+        "lots": [
+            {
+                "quantity": 1000,
+                "purchase_date": "2020-03-20",
+                "purchase_price": 150.0
+            },
+            {
+                "quantity": 500,
+                "purchase_date": "2022-05-10",
+                "purchase_price": 250.0
+            }
+        ]
+    }
+]

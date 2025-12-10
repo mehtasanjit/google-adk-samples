@@ -1,0 +1,38 @@
+[
+    {
+        "card_id": "cc_1",
+        "bank_name": "HDFC",
+        "card_name": "Regalia",
+        "limit": 1000000,
+        "current_out_standing": 50000,
+        "due_date": "2025-12-16",
+        "card_number": "4321567890123456"
+    },
+    {
+        "card_id": "cc_2",
+        "bank_name": "ICICI",
+        "card_name": "Amazon Pay",
+        "limit": 500000,
+        "current_out_standing": 20000,
+        "due_date": "2025-12-18",
+        "card_number": "5432678901234567"
+    },
+    {
+        "card_id": "cc_3",
+        "bank_name": "SBI",
+        "card_name": "Elite",
+        "limit": 800000,
+        "current_out_standing": 10000,
+        "due_date": "2025-12-25",
+        "card_number": "6543789012345678"
+    },
+    {
+        "card_id": "cc_4",
+        "bank_name": "Axis",
+        "card_name": "Magnus",
+        "limit": 1500000,
+        "current_out_standing": 100000,
+        "due_date": "2025-12-18",
+        "card_number": "7654890123456789"
+    }
+]

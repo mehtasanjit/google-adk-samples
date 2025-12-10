@@ -1,0 +1,7 @@
+[
+    {"min_months": 6, "max_months": 12, "rate_gen": 4.50, "rate_senior": 5.00},
+    {"min_months": 13, "max_months": 24, "rate_gen": 5.00, "rate_senior": 5.50},
+    {"min_months": 25, "max_months": 36, "rate_gen": 5.50, "rate_senior": 6.00},
+    {"min_months": 37, "max_months": 60, "rate_gen": 6.00, "rate_senior": 6.50},
+    {"min_months": 61, "max_months": 120, "rate_gen": 6.50, "rate_senior": 7.00}
+]
