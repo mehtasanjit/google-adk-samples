@@ -119,12 +119,68 @@ We developed a dedicated script to benchmark these agents directly, bypassing th
 | **Standalone_Schema** | 1.83 | 0.0 | 0.0 | 7.22 | 8.71 | **Low Yield**. Median is 0 (schema too strict, often fails to return products). |
 | **Standalone_NoSchema** | 2.23 | 0.0 | 0.75 | 10.24 | 12.57 | Low median. Higher recall than Schema variant, but often returns invalid JSON. |
 
-### Key Takeaways
-1.  **Trade-off**: There is a clear trade-off between **Latency** and **Reliability/Structure**.
-2.  **Recommendation**:
-    *   Use **SequentialAgent** for the main `retailwiz` flow to ensure reliable, structured product data.
-    *   Use **LoopAgent** only for very ambiguous queries where initial search might fail.
-    *   Avoid **Standalone** agents for core product search unless latency is the *only* constraint and you have robust error handling.
+### Key Takeaways & Recommendations
+
+#### 1. Schema Enforcement on Search Agents is Counterproductive
+
+**Critical Finding**: Applying `response_schema` directly to the search agent causes it to return products **less than 10% of the time** (Standalone_Schema Median = 0 products).
+
+| Configuration | Product Success Rate | Median Products | Why? |
+| :--- | :--- | :--- | :--- |
+| **Search + Schema** | ~10% | 0 | Model struggles to simultaneously search AND format to strict schema. Often gives up entirely. |
+| **Search (No Schema)** | ~70-90% | 1-2 | Model focuses on finding data. Returns rich text/markdown with product info, but not JSON-conformant. |
+
+**Root Cause**: When constrained by a strict schema, the model's attention is split between (a) processing search results and (b) adhering to JSON syntax. If it cannot perfectly format messy search data into the required structure, it "fails safely" by returning nothing rather than partial data.
+
+#### 2. Recommended Architecture: SequentialAgent
+
+The optimal approach is to **decouple search from formatting**:
+
+```
+[Search Agent (No Schema)] → [Formatting Agent (With Schema)]
+```
+
+**SequentialAgent** implements this pattern:
+- **Stage 1 - Search**: LLM calls Google Search tool, returns raw results (text/markdown OK)
+- **Stage 2 - Format**: Dedicated agent converts raw results to strict JSON schema
+
+| Metric | SequentialAgent | LoopAgent | Standalone_Schema | Standalone_NoSchema |
+| :--- | :--- | :--- | :--- | :--- |
+| **Mean Latency** | 21.92s | 40.96s | 5.63s | 20.56s |
+| **Median Products** | 3.38 | 3.0 | 0 | 0.75 |
+| **P99 Latency** | 90.84s | 304.73s | 14.46s | 95.13s |
+| **Reliability** | ⭐⭐⭐⭐⭐ | ⭐⭐⭐ | ⭐ | ⭐⭐ |
+
+**Why SequentialAgent over LoopAgent?**
+- **Single-shot conversion**: SequentialAgent takes one pass to format results, while LoopAgent may iterate multiple times
+- **Lower latency**: Mean 21.92s vs 40.96s (2x faster)
+- **Predictable performance**: P99 of 90s vs 305s (3x more consistent)
+- **Fewer errors**: LoopAgent's retry logic can cause cascading failures on edge cases
+
+#### 3. When to Use Each Architecture
+
+| Use Case | Recommended Agent | Rationale |
+| :--- | :--- | :--- |
+| **Production product search** | SequentialAgent | Best balance of reliability, latency, and product yield |
+| **Latency-critical (< 10s required)** | Standalone_NoSchema + Robust Parser | Fastest, but requires post-processing to extract data from text |
+| **Complex/ambiguous queries** | LoopAgent | Retry capability helps for queries that may need refinement |
+| **Non-product queries (trends, specs)** | Standalone_NoSchema | Text responses are often more informative than forced JSON |
+
+#### 4. Implementation Checklist
+
+For **SequentialAgent** (Recommended):
+- [ ] Create a Search sub-agent with `google_search` tool, NO `response_schema`
+- [ ] Create a Formatter sub-agent WITH `response_schema` for your output structure
+- [ ] Wire them in a `SequentialAgent`: `[SearchAgent, FormatterAgent]`
+- [ ] Handle cases where search returns no results (null/None products)
+
+For **Standalone_NoSchema** (When latency is critical):
+- [ ] Use prompt engineering to request structured output (not enforce it)
+- [ ] Implement robust response parsing:
+  - Strip markdown code blocks (` ```json ... ``` `)
+  - Remove conversational preambles using regex
+  - Fall back to text extraction if JSON parsing fails
+- [ ] Consider text responses as valid output for comparison/trend queries
 
 ## 6. Error Analysis & Query-Specific Insights
 
