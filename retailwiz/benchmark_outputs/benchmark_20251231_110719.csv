@@ -1,0 +1,121 @@
+Agent,Query,Iteration,Success,Latency,Valid_JSON,Product_Count,Error
+LoopAgent,iphone 16 pro max price in india,1,True,14.656996488571167,True,1,
+LoopAgent,iphone 16 pro max price in india,2,True,16.72346806526184,True,4,
+LoopAgent,iphone 16 pro max price in india,3,True,15.886734008789062,True,3,
+LoopAgent,best running shoes under 5000 rupees,1,True,85.12512350082397,True,6,
+LoopAgent,best running shoes under 5000 rupees,2,True,21.64871621131897,True,9,
+LoopAgent,best running shoes under 5000 rupees,3,True,25.370749473571777,True,9,
+LoopAgent,samsung s24 ultra vs pixel 9 pro comparison,1,True,31.52366280555725,True,2,
+LoopAgent,samsung s24 ultra vs pixel 9 pro comparison,2,True,105.89477062225342,True,2,
+LoopAgent,samsung s24 ultra vs pixel 9 pro comparison,3,True,50.63070845603943,True,2,
+LoopAgent,reviews for sony wh-1000xm5,1,True,23.68558669090271,True,1,
+LoopAgent,reviews for sony wh-1000xm5,2,True,20.468458890914917,True,1,
+LoopAgent,reviews for sony wh-1000xm5,3,True,21.241220235824585,True,1,
+LoopAgent,current trends in indian ethnic wear market,1,False,22.961732864379883,True,0,object of type 'NoneType' has no len()
+LoopAgent,current trends in indian ethnic wear market,2,False,16.90503478050232,True,0,object of type 'NoneType' has no len()
+LoopAgent,current trends in indian ethnic wear market,3,False,17.950187921524048,True,0,object of type 'NoneType' has no len()
+LoopAgent,technical specifications of ps5 slim,1,True,14.723642587661743,True,1,
+LoopAgent,technical specifications of ps5 slim,2,True,23.178257703781128,True,1,
+LoopAgent,technical specifications of ps5 slim,3,True,18.20920205116272,True,1,
+LoopAgent,where to buy framework laptop in india,1,False,15.181829452514648,True,0,object of type 'NoneType' has no len()
+LoopAgent,where to buy framework laptop in india,2,False,15.672924518585205,True,0,object of type 'NoneType' has no len()
+LoopAgent,where to buy framework laptop in india,3,True,15.177911520004272,True,1,
+LoopAgent,best deals on 55 inch 4k tv,1,True,31.838752508163452,True,11,
+LoopAgent,best deals on 55 inch 4k tv,2,True,35.441075563430786,True,14,
+LoopAgent,best deals on 55 inch 4k tv,3,True,84.6066346168518,True,12,
+LoopAgent,upcoming electric scooters in india 2025,1,True,24.569663047790527,True,17,
+LoopAgent,upcoming electric scooters in india 2025,2,True,109.7318229675293,True,9,
+LoopAgent,upcoming electric scooters in india 2025,3,True,24.507044553756714,True,15,
+LoopAgent,top rated whey protein brands,1,True,21.088133573532104,True,25,
+LoopAgent,top rated whey protein brands,2,True,27.682854175567627,True,14,
+LoopAgent,top rated whey protein brands,3,True,21.54329776763916,True,13,
+SequentialAgent,iphone 16 pro max price in india,1,True,11.221759796142578,True,1,
+SequentialAgent,iphone 16 pro max price in india,2,True,14.807820081710815,True,3,
+SequentialAgent,iphone 16 pro max price in india,3,True,11.294083595275879,True,1,
+SequentialAgent,best running shoes under 5000 rupees,1,True,27.235902547836304,True,7,
+SequentialAgent,best running shoes under 5000 rupees,2,True,20.879852533340454,True,11,
+SequentialAgent,best running shoes under 5000 rupees,3,True,17.728704690933228,True,9,
+SequentialAgent,samsung s24 ultra vs pixel 9 pro comparison,1,True,26.564274072647095,True,2,
+SequentialAgent,samsung s24 ultra vs pixel 9 pro comparison,2,True,31.71515464782715,True,2,
+SequentialAgent,samsung s24 ultra vs pixel 9 pro comparison,3,True,31.302419185638428,True,2,
+SequentialAgent,reviews for sony wh-1000xm5,1,True,15.938363075256348,True,1,
+SequentialAgent,reviews for sony wh-1000xm5,2,True,16.427862405776978,True,1,
+SequentialAgent,reviews for sony wh-1000xm5,3,True,18.968793392181396,True,1,
+SequentialAgent,current trends in indian ethnic wear market,1,False,24.118824005126953,True,0,object of type 'NoneType' has no len()
+SequentialAgent,current trends in indian ethnic wear market,2,False,21.463481903076172,True,0,object of type 'NoneType' has no len()
+SequentialAgent,current trends in indian ethnic wear market,3,False,16.43113088607788,True,0,object of type 'NoneType' has no len()
+SequentialAgent,technical specifications of ps5 slim,1,True,16.655664920806885,True,1,
+SequentialAgent,technical specifications of ps5 slim,2,True,16.390334606170654,True,1,
+SequentialAgent,technical specifications of ps5 slim,3,False,11.96874475479126,True,0,object of type 'NoneType' has no len()
+SequentialAgent,where to buy framework laptop in india,1,False,9.888360738754272,True,0,object of type 'NoneType' has no len()
+SequentialAgent,where to buy framework laptop in india,2,True,15.220272302627563,True,1,
+SequentialAgent,where to buy framework laptop in india,3,True,19.517449855804443,True,2,
+SequentialAgent,best deals on 55 inch 4k tv,1,True,22.993340730667114,True,10,
+SequentialAgent,best deals on 55 inch 4k tv,2,True,35.95790767669678,True,21,
+SequentialAgent,best deals on 55 inch 4k tv,3,True,22.0803701877594,True,6,
+SequentialAgent,upcoming electric scooters in india 2025,1,True,21.38967752456665,True,17,
+SequentialAgent,upcoming electric scooters in india 2025,2,True,24.675294637680054,True,11,
+SequentialAgent,upcoming electric scooters in india 2025,3,True,24.95156741142273,True,20,
+SequentialAgent,top rated whey protein brands,1,True,19.205663442611694,True,16,
+SequentialAgent,top rated whey protein brands,2,True,22.407864332199097,True,12,
+SequentialAgent,top rated whey protein brands,3,True,20.614677906036377,True,22,
+Standalone_Schema,iphone 16 pro max price in india,1,True,4.16005277633667,True,0,
+Standalone_Schema,iphone 16 pro max price in india,2,True,3.29933500289917,True,0,
+Standalone_Schema,iphone 16 pro max price in india,3,False,4.24427342414856,False,0,'NoneType' object has no attribute 'content'
+Standalone_Schema,best running shoes under 5000 rupees,1,True,3.022841691970825,True,0,
+Standalone_Schema,best running shoes under 5000 rupees,2,True,9.353695631027222,True,8,
+Standalone_Schema,best running shoes under 5000 rupees,3,True,7.623994588851929,True,6,
+Standalone_Schema,samsung s24 ultra vs pixel 9 pro comparison,1,False,4.2507359981536865,False,0,'NoneType' object has no attribute 'content'
+Standalone_Schema,samsung s24 ultra vs pixel 9 pro comparison,2,True,7.511497497558594,True,2,
+Standalone_Schema,samsung s24 ultra vs pixel 9 pro comparison,3,True,3.118948221206665,True,0,
+Standalone_Schema,reviews for sony wh-1000xm5,1,False,4.157622337341309,False,0,'NoneType' object has no attribute 'content'
+Standalone_Schema,reviews for sony wh-1000xm5,2,False,2.357630729675293,False,0,'NoneType' object has no attribute 'content'
+Standalone_Schema,reviews for sony wh-1000xm5,3,True,5.508150339126587,True,1,
+Standalone_Schema,current trends in indian ethnic wear market,1,False,3.2486014366149902,True,0,object of type 'NoneType' has no len()
+Standalone_Schema,current trends in indian ethnic wear market,2,False,3.1270954608917236,True,0,object of type 'NoneType' has no len()
+Standalone_Schema,current trends in indian ethnic wear market,3,False,3.352102279663086,True,0,object of type 'NoneType' has no len()
+Standalone_Schema,technical specifications of ps5 slim,1,True,6.535662889480591,True,12,
+Standalone_Schema,technical specifications of ps5 slim,2,False,3.408245086669922,True,0,object of type 'NoneType' has no len()
+Standalone_Schema,technical specifications of ps5 slim,3,False,2.3691132068634033,False,0,'NoneType' object has no attribute 'content'
+Standalone_Schema,where to buy framework laptop in india,1,False,2.2167558670043945,False,0,'NoneType' object has no attribute 'content'
+Standalone_Schema,where to buy framework laptop in india,2,True,3.409024238586426,True,0,
+Standalone_Schema,where to buy framework laptop in india,3,True,3.9853811264038086,True,0,
+Standalone_Schema,best deals on 55 inch 4k tv,1,True,5.170130014419556,True,0,
+Standalone_Schema,best deals on 55 inch 4k tv,2,True,8.543423891067505,True,5,
+Standalone_Schema,best deals on 55 inch 4k tv,3,False,4.597121715545654,True,0,object of type 'NoneType' has no len()
+Standalone_Schema,upcoming electric scooters in india 2025,1,True,4.000304698944092,True,0,
+Standalone_Schema,upcoming electric scooters in india 2025,2,True,2.765880584716797,True,0,
+Standalone_Schema,upcoming electric scooters in india 2025,3,True,3.6449227333068848,True,0,
+Standalone_Schema,top rated whey protein brands,1,True,11.834342956542969,True,5,
+Standalone_Schema,top rated whey protein brands,2,True,7.256790637969971,True,5,
+Standalone_Schema,top rated whey protein brands,3,False,4.163676977157593,True,0,object of type 'NoneType' has no len()
+Standalone_NoSchema,iphone 16 pro max price in india,1,True,9.120079040527344,True,3,
+Standalone_NoSchema,iphone 16 pro max price in india,2,True,11.5528564453125,True,1,
+Standalone_NoSchema,iphone 16 pro max price in india,3,True,12.25145435333252,True,1,
+Standalone_NoSchema,best running shoes under 5000 rupees,1,True,18.300755500793457,True,7,
+Standalone_NoSchema,best running shoes under 5000 rupees,2,True,16.921170234680176,False,0,Invalid JSON
+Standalone_NoSchema,best running shoes under 5000 rupees,3,True,31.884285926818848,False,0,Invalid JSON
+Standalone_NoSchema,samsung s24 ultra vs pixel 9 pro comparison,1,True,24.301506996154785,False,0,Invalid JSON
+Standalone_NoSchema,samsung s24 ultra vs pixel 9 pro comparison,2,True,20.0064115524292,True,3,
+Standalone_NoSchema,samsung s24 ultra vs pixel 9 pro comparison,3,True,18.946646690368652,True,2,
+Standalone_NoSchema,reviews for sony wh-1000xm5,1,True,12.848741054534912,True,1,
+Standalone_NoSchema,reviews for sony wh-1000xm5,2,True,12.958207130432129,True,1,
+Standalone_NoSchema,reviews for sony wh-1000xm5,3,True,10.71612811088562,True,1,
+Standalone_NoSchema,current trends in indian ethnic wear market,1,True,12.271571397781372,False,0,Invalid JSON
+Standalone_NoSchema,current trends in indian ethnic wear market,2,True,15.936523199081421,True,4,
+Standalone_NoSchema,current trends in indian ethnic wear market,3,True,11.444867134094238,True,0,
+Standalone_NoSchema,technical specifications of ps5 slim,1,True,10.332513570785522,True,2,
+Standalone_NoSchema,technical specifications of ps5 slim,2,True,16.85981297492981,True,2,
+Standalone_NoSchema,technical specifications of ps5 slim,3,True,9.462141752243042,False,0,Invalid JSON
+Standalone_NoSchema,where to buy framework laptop in india,1,True,8.57941722869873,True,1,
+Standalone_NoSchema,where to buy framework laptop in india,2,True,19.92566227912903,False,0,Invalid JSON
+Standalone_NoSchema,where to buy framework laptop in india,3,True,10.012132167816162,False,0,Invalid JSON
+Standalone_NoSchema,best deals on 55 inch 4k tv,1,True,26.98535418510437,False,0,Invalid JSON
+Standalone_NoSchema,best deals on 55 inch 4k tv,2,True,244.2443141937256,False,0,Invalid JSON
+Standalone_NoSchema,best deals on 55 inch 4k tv,3,True,24.961301565170288,False,0,Invalid JSON
+Standalone_NoSchema,upcoming electric scooters in india 2025,1,True,14.577004432678223,True,14,
+Standalone_NoSchema,upcoming electric scooters in india 2025,2,True,20.345664501190186,True,12,
+Standalone_NoSchema,upcoming electric scooters in india 2025,3,True,30.25216054916382,False,0,Invalid JSON
+Standalone_NoSchema,top rated whey protein brands,1,True,23.2179274559021,True,9,
+Standalone_NoSchema,top rated whey protein brands,2,True,18.897120714187622,False,0,Invalid JSON
+Standalone_NoSchema,top rated whey protein brands,3,True,20.887871980667114,True,10,

@@ -1,0 +1,167 @@
+Agent,Query,Iteration,Success,Latency,Valid_JSON,Product_Count,Error
+Standalone_NoSchema,iphone 16 pro max price in india,1,11.50,1,,"```json
+{
+ ""user_query"": ""iphone 16 pro max price in india"",
+ ""answer"": ""The iPhone 16 Pro Max was released on September 20, 2024, in India. Prices for the iPhone 16 Pro Max in India vary by storage capacity. The 256GB model starts around ₹1,34,900 to ₹1,44,900. The 512GB model is priced at approximately ₹1,54,900 to ₹1,55,900, and the 1TB variant can be found for about ₹1,72,900 to ₹1,75,900."",
+ ""products"": [
+  {
+   ""name"": ""iPhone 16 Pro Max"",
+   ""description"": ""The iPhone 16 Pro Max is a high..."
+Standalone_NoSchema,iphone 16 pro max price in india,1,True,11.50089168548584,False,1,
+Standalone_NoSchema,iphone 16 pro max price in india,2,15.70,1,,"```json
+{
+ ""user_query"": ""iphone 16 pro max price in india"",
+ ""answer"": ""The iPhone 16 Pro Max was released in September 2024, with prices in India starting from approximately ₹1,44,900 for the 256GB variant. Prices vary depending on the storage capacity and retailer, with some retailers offering it for around ₹1,27,490."",
+ ""products"": [
+  {
+   ""name"": ""iPhone 16 Pro Max"",
+   ""description"": ""The iPhone 16 Pro Max features a 6.9-inch Super Retina XDR OLED display with a 120Hz ProMotion refresh ra..."
+Standalone_NoSchema,iphone 16 pro max price in india,2,True,15.697773456573486,False,1,
+Standalone_NoSchema,iphone 16 pro max price in india,3,9.67,1,,"```json
+{
+ ""user_query"": ""iphone 16 pro max price in india"",
+ ""answer"": ""The iPhone 16 Pro Max was launched in India with a starting price of ₹1,44,900. However, current prices can vary depending on the retailer and storage configuration. For instance, the 256GB model is available around ₹134,900 on platforms like Flipkart and 91mobiles, and at ₹127,490 on Croma. The 1TB model is listed at ₹175,900. The phone generally features a 6.9-inch Super Retina XDR display, an Apple A18 Pro chip, and a ve..."
+Standalone_NoSchema,iphone 16 pro max price in india,3,True,9.665850400924683,False,1,
+Standalone_NoSchema,best running shoes under 5000 rupees,1,15.33,10,,"{""user_query"": ""best running shoes under 5000 rupees"", ""answer"": ""For running shoes under ₹5000 in India, several brands offer excellent options that balance comfort, durability, and performance. Popular choices include models from Skechers, Nike, ASICS, Adidas, New Balance, and Puma, catering to various running needs from casual wear to short and mid-distance runs. "", ""products"": [{""name"": ""Skechers D'LUX Walker"", ""description"": ""Known for its comfort, this shoe features Memory Foam insoles and..."
+Standalone_NoSchema,best running shoes under 5000 rupees,1,True,15.333124876022339,False,10,
+Standalone_NoSchema,best running shoes under 5000 rupees,2,17.52,7,,"```json
+{
+ ""user_query"": ""best running shoes under 5000 rupees"",
+ ""answer"": ""For running shoes under ₹5000 in India, several brands offer good options focusing on comfort, cushioning, and durability. Popular choices include models from Skechers, Nike, ASICS, Adidas, and Puma, which are suitable for various running needs from casual wear to short to mid-distance runs."",
+ ""products"": [
+  {
+   ""name"": ""Skechers D'LUX Walker - Men's Casual Shoes - 232044-NVGY"",
+   ""description"": ""These shoes are kno..."
+Standalone_NoSchema,best running shoes under 5000 rupees,2,True,17.523364543914795,False,7,
+Standalone_NoSchema,best running shoes under 5000 rupees,3,15.03,0,Invalid JSON,"Here are some of the best running shoes available in India for under ₹5,000, along with their key features and reviews:
+
+```json
+{
+    ""user_query"": ""best running shoes under 5000 rupees"",
+    ""answer"": ""Finding the best running shoes under ₹5,000 in India involves considering factors like comfort, cushioning, durability, and specific use cases. Several brands offer excellent options in this budget, catering to different running styles and preferences. The Nike Downshifter 13 is a great budget-f..."
+Standalone_NoSchema,best running shoes under 5000 rupees,3,True,15.026487112045288,False,0,Invalid JSON
+Standalone_NoSchema,samsung s24 ultra vs pixel 9 pro comparison,1,22.18,2,,"```json
+{
+  ""user_query"": ""samsung s24 ultra vs pixel 9 pro comparison"",
+  ""answer"": ""The Samsung Galaxy S24 Ultra, released in January 2024, and the Google Pixel 9 Pro, launched in September 2024, are both flagship smartphones offering premium experiences, but they differ significantly in their hardware, software philosophy, and overall approach. The S24 Ultra boasts a powerful Snapdragon 8 Gen 3 for Galaxy processor, a versatile quad-camera system with a 200MP main sensor, and the integrated S..."
+Standalone_NoSchema,samsung s24 ultra vs pixel 9 pro comparison,1,True,22.175543308258057,False,2,
+Standalone_NoSchema,samsung s24 ultra vs pixel 9 pro comparison,2,23.42,0,Invalid JSON,"The Samsung Galaxy S24 Ultra and Google Pixel 9 Pro are both top-tier Android smartphones, offering premium features and advanced capabilities. The S24 Ultra excels in raw processing power, particularly for demanding tasks like gaming, and features a versatile camera system with extensive zoom capabilities, a built-in S-Pen, and a highly durable, anti-reflective display. The Pixel 9 Pro, on the other hand, stands out for its exceptional camera system that delivers natural colors and superior low..."
+Standalone_NoSchema,samsung s24 ultra vs pixel 9 pro comparison,2,True,23.42281484603882,False,0,Invalid JSON
+Standalone_NoSchema,samsung s24 ultra vs pixel 9 pro comparison,3,25.20,2,,"```json
+{
+ ""user_query"": ""samsung s24 ultra vs pixel 9 pro comparison"",
+ ""answer"": ""The Samsung Galaxy S24 Ultra and the Google Pixel 9 Pro are both high-end smartphones offering premium features, but they cater to slightly different preferences. The S24 Ultra excels in raw processing power, display technology with Gorilla Armor, and the versatile S Pen. The Pixel 9 Pro, on the other hand, is lauded for its exceptional camera performance, cleaner Android experience, and a more compact design. Wh..."
+Standalone_NoSchema,samsung s24 ultra vs pixel 9 pro comparison,3,True,25.196181058883667,False,2,
+Standalone_NoSchema,reviews for sony wh-1000xm5,1,17.52,1,,"```json
+{
+ ""user_query"": ""reviews for sony wh-1000xm5"",
+ ""answer"": ""The Sony WH-1000XM5 are highly-regarded wireless noise-cancelling headphones known for their world-class active noise cancellation, excellent sound quality (especially after equalization), and comfortable design, though some aspects like build quality and stock sound profile have received minor criticisms. They were initially priced at $399, but current deals often see them available for around $248-$250, with some listings as l..."
+Standalone_NoSchema,reviews for sony wh-1000xm5,1,True,17.51921010017395,False,1,
+Standalone_NoSchema,reviews for sony wh-1000xm5,2,8.11,1,,"```json
+{
+ ""user_query"": ""reviews for sony wh-1000xm5"",
+ ""answer"": ""The Sony WH-1000XM5 are highly-regarded wireless noise-cancelling headphones known for their excellent sound quality, class-leading active noise cancellation, and comfortable design. They offer improved call quality and battery life compared to previous models, though some reviewers note a potentially less durable build quality and a higher price point."",
+ ""products"": [
+  {
+   ""name"": ""Sony WH-1000XM5"",
+   ""description"": ""The So..."
+Standalone_NoSchema,reviews for sony wh-1000xm5,2,True,8.114506244659424,False,1,
+Standalone_NoSchema,reviews for sony wh-1000xm5,3,9.50,1,,"```json
+{
+  ""user_query"": ""reviews for sony wh-1000xm5"",
+  ""answer"": ""The Sony WH-1000XM5 are highly-rated wireless noise-cancelling headphones, praised for their excellent sound quality, class-leading active noise cancellation (ANC), and comfortable design. They offer improved clarity and a more open presentation compared to previous models, and superior call quality. While they are a strong contender in the premium headphone market, some reviewers note concerns about their build quality (being..."
+Standalone_NoSchema,reviews for sony wh-1000xm5,3,True,9.50024127960205,False,1,
+Standalone_NoSchema,current trends in indian ethnic wear market,1,13.44,0,Invalid JSON,"The Indian ethnic wear market is experiencing dynamic growth, driven by a blend of tradition and modern innovation, with a projected market size of USD 26.9 billion by FY'26 in India alone, growing at a CAGR of about 10.6%. Globally, the ethnic wear market is expected to reach USD 185.0 billion by 2034. This growth is fueled by changing lifestyles, increasing disposable incomes, the rising popularity of traditional attire for various occasions, and the significant expansion of the e-commerce sec..."
+Standalone_NoSchema,current trends in indian ethnic wear market,1,True,13.44477367401123,False,0,Invalid JSON
+Standalone_NoSchema,current trends in indian ethnic wear market,2,18.37,0,,"```json
+{
+ ""user_query"": ""current trends in indian ethnic wear market"",
+ ""answer"": ""The Indian ethnic wear market is experiencing significant growth, projected to reach USD 30,448.6 million by 2030, with a CAGR of 6.9% from 2024. Key trends shaping this market include a strong emphasis on fusion wear, blending traditional Indian aesthetics with modern styles, a move towards comfortable and versatile designs, and a growing preference for sustainable and handcrafted apparel.\n\n**Key Trends:**\n* ..."
+Standalone_NoSchema,current trends in indian ethnic wear market,2,True,18.37143111228943,False,0,
+Standalone_NoSchema,current trends in indian ethnic wear market,3,16.33,0,,"```json
+{
+ ""user_query"": ""current trends in indian ethnic wear market"",
+ ""answer"": ""The Indian ethnic wear market is experiencing significant growth, driven by cultural celebrations, rising disposable incomes, urbanization, and the influence of social media and Bollywood. The market is projected to reach USD 558.5 billion by 2033, growing at a CAGR of 12.6%. Key trends include a strong emphasis on fusion wear, which blends traditional Indian aesthetics with contemporary styles, and a rising dema..."
+Standalone_NoSchema,current trends in indian ethnic wear market,3,True,16.327550411224365,False,0,
+Standalone_NoSchema,technical specifications of ps5 slim,1,11.14,2,,"```json
+{
+  ""user_query"": ""technical specifications of ps5 slim"",
+  ""answer"": ""The PlayStation 5 Slim features a powerful 3rd generation AMD Ryzen (Zen 2) processor with 8 cores and 16 threads, capable of variable frequencies up to 3.5 GHz. Its graphics are handled by a custom AMD RDNA 2-based engine, delivering up to 10.28 TFLOPs at a variable frequency of up to 2.23 GHz, with support for Ray Tracing. It comes with 16 GB of GDDR6 RAM, offering a bandwidth of 448GB/s. The console is equipped wit..."
+Standalone_NoSchema,technical specifications of ps5 slim,1,True,11.14038896560669,False,2,
+Standalone_NoSchema,technical specifications of ps5 slim,2,10.04,2,,"```json
+{
+ ""user_query"": ""technical specifications of ps5 slim"",
+ ""answer"": ""The PlayStation 5 Slim features an AMD Ryzen Zen 2 processor with 8 cores and 16 threads, running at up to 3.5 GHz. Its graphics are powered by a custom AMD RDNA 2 GPU, delivering 10.3 TFLOPs at up to 2.23 GHz. The console is equipped with 16 GB of GDDR6 memory. Storage capacity varies by model, with the disc version offering a 1 TB SSD and the Digital Edition providing an 825 GB SSD, both expandable via an M.2 NVMe SSD..."
+Standalone_NoSchema,technical specifications of ps5 slim,2,True,10.039851427078247,False,2,
+Standalone_NoSchema,technical specifications of ps5 slim,3,12.37,1,,"```json
+{
+ ""user_query"": ""technical specifications of ps5 slim"",
+ ""answer"": ""The PlayStation 5 Slim features a powerful 3rd generation AMD Ryzen Zen 2 processor and a custom AMD RDNA 2 graphics chipset, delivering 10.28 TFLOPs of graphical power. It comes with 16 GB of GDDR6 memory and a 1 TB SSD for storage, though the original Digital Edition had 825 GB. The console supports 8K resolution and 4K gaming at up to 120 frames per second, complete with HDR technology and Tempest 3D AudioTech for im..."
+Standalone_NoSchema,technical specifications of ps5 slim,3,True,12.374433755874634,False,1,
+Standalone_NoSchema,where to buy framework laptop in india,1,16.75,0,Invalid JSON," pensée
+The user is asking where to buy a Framework laptop in India. The search results provide some insights:
+
+1.  **Ubuy India**: It seems Ubuy India sells the Framework Laptop 13 DIY Kit (13th Gen i7 1360p, 32GB RAM, 1TB) for approximately INR 145,765. They mention it's not available locally but offer express shipping. This indicates that Framework itself might not have a direct presence or official retail channel in India yet.
+2.  **Kirti Enterprise (Tradeindia)**: Lists ""framework laptop"" a..."
+Standalone_NoSchema,where to buy framework laptop in india,1,True,16.7521653175354,False,0,Invalid JSON
+Standalone_NoSchema,where to buy framework laptop in india,2,9.08,1,,"{""user_query"": ""where to buy framework laptop in india"", ""answer"": ""As of current information, Framework laptops are not officially available for direct purchase from Framework in India. Framework has not officially launched in the Indian market and there is no estimated date for their official expansion into the region. Framework explicitly states that it does not support freight forwarding, and orders utilizing such services or having false billing information are subject to cancellation. Howe..."
+Standalone_NoSchema,where to buy framework laptop in india,2,True,9.084243774414062,False,1,
+Standalone_NoSchema,where to buy framework laptop in india,3,10.52,0,Invalid JSON,"Framework laptops are not officially sold or shipped directly to India by Framework, and the company actively prevents orders using freight forwarding services to unsupported countries.
+
+However, there are some third-party avenues where you might find Framework laptops or related items in India:
+
+*   **Ubuy India** lists a ""Framework laptop 13 DIY Kit"" with specific configurations (13th Gen i7 1360p, 32GB RAM, 1TB) for sale, though it states that the product is not available locally and relies o..."
+Standalone_NoSchema,where to buy framework laptop in india,3,True,10.523399591445923,False,0,Invalid JSON
+Standalone_NoSchema,best deals on 55 inch 4k tv,1,21.77,4,,"```json
+{
+ ""user_query"": ""best deals on 55 inch 4k tv"",
+ ""answer"": ""There are several attractive deals available on 55-inch 4K TVs in India across various brands and retailers. These include significant discounts on models from Realme, iFFALCON, Croma, and Sony, offering a range of features from QLED displays to integrated Google TV and advanced audio technologies. Prices for these 55-inch 4K TVs can start from approximately ₹27,000, with many models featuring substantial reductions from their o..."
+Standalone_NoSchema,best deals on 55 inch 4k tv,1,True,21.76910400390625,False,4,
+Standalone_NoSchema,best deals on 55 inch 4k tv,2,25.18,0,Invalid JSON,"note
+The search results provide a good overview of 55-inch 4K TVs in India, including various brands, models, and price ranges. Some results also offer details on refresh rates, display technologies (QLED, OLED, LED), and smart TV features (Google TV, Android TV, Tizen). I also found a YouTube video listing ""top 55 inch Smart TVs with QLED, OLED, and 4K display technology with the latest features"" and their deal prices, including some effective prices after discounts. This is very relevant.
+
+How..."
+Standalone_NoSchema,best deals on 55 inch 4k tv,2,True,25.176549911499023,False,0,Invalid JSON
+Standalone_NoSchema,best deals on 55 inch 4k tv,3,19.60,7,,"```json
+{
+  ""user_query"": ""best deals on 55 inch 4k tv"",
+  ""answer"": ""Here are some of the best deals and highly-rated 55-inch 4K TVs available in India, with prices generally under ₹50,000, offering a range of features for different preferences. Please note that prices are subject to change and it's always recommended to check the latest offers from retailers."",
+  ""products"": [
+    {
+      ""name"": ""Croma 139.7 cm (55 inch) 4K Ultra HD LED Google TV with Google Voice Assistant"",
+      ""descripti..."
+Standalone_NoSchema,best deals on 55 inch 4k tv,3,True,19.604328870773315,False,7,
+Standalone_NoSchema,upcoming electric scooters in india 2025,1,21.14,0,Invalid JSON,"The Indian electric scooter market is set to see several new models in 2025, with manufacturers focusing on enhanced performance, extended range, and competitive pricing. Key players like Hero, Suzuki, Bajaj, Ultraviolette, Yamaha, TVS, Ather, and BGauss are introducing a range of scooters catering to various segments, from entry-level daily commuters to high-performance urban vehicles.
+
+Here's a look at some of the upcoming electric scooters in India for 2025:
+
+*   **Hero Vida VX2**
+    *   **D..."
+Standalone_NoSchema,upcoming electric scooters in india 2025,1,True,21.140785455703735,False,0,Invalid JSON
+Standalone_NoSchema,upcoming electric scooters in india 2025,2,37.54,0,Invalid JSON,"The Indian electric scooter market is set to see a significant influx of new models in 2025, with several manufacturers launching or planning to launch their latest offerings. These upcoming scooters aim to cater to various segments, from budget-friendly commuters to premium sports models, focusing on improved range, performance, and advanced features.
+
+Some of the key electric scooters that have either launched or are expected to launch in India during 2025 include models from established playe..."
+Standalone_NoSchema,upcoming electric scooters in india 2025,2,True,37.54344820976257,False,0,Invalid JSON
+Standalone_NoSchema,upcoming electric scooters in india 2025,3,22.23,12,,"```json
+{
+  ""user_query"": ""upcoming electric scooters in india 2025"",
+  ""answer"": ""Several electric scooters are either launched in 2025 or expected to launch in India during 2025, offering a range of features, price points, and performance specifications. Key models include offerings from Hero, Suzuki, Yamaha, TVS, Bajaj, Ultraviolette, Ola, River, and BGauss. These scooters aim to cater to various segments, from budget-friendly commuters to premium performance-oriented models, contributing to ..."
+Standalone_NoSchema,upcoming electric scooters in india 2025,3,True,22.231770992279053,False,12,
+Standalone_NoSchema,top rated whey protein brands,1,15.86,6,,"```json
+{
+ ""user_query"": ""top rated whey protein brands"",
+ ""answer"": ""Several whey protein brands are highly rated in India for their quality, effectiveness, and customer satisfaction. These brands cater to various needs, from muscle building and recovery to general protein supplementation, offering different formulations like concentrates, isolates, and blends."",
+ ""products"": [
+  {
+   ""name"": ""Optimum Nutrition (ON) Gold Standard 100% Whey"",
+   ""description"": ""A globally recognized and trusted ..."
+Standalone_NoSchema,top rated whey protein brands,1,True,15.862831115722656,False,6,
+Standalone_NoSchema,top rated whey protein brands,2,12.01,7,,"{""user_query"": ""top rated whey protein brands"", ""answer"": ""Here are some of the top-rated whey protein brands and their popular products available in India, based on various reviews and comparisons. The information includes product details, estimated prices (where available), ratings, and noted pros and cons."", ""products"": [{""name"": ""Optimum Nutrition (ON) Gold Standard 100% Whey"", ""description"": ""A globally favored, isolate-dominated whey protein known for its international standards and consis..."
+Standalone_NoSchema,top rated whey protein brands,2,True,12.013303995132446,False,7,
+Standalone_NoSchema,top rated whey protein brands,3,15.62,0,Invalid JSON,"The market for whey protein in India features several highly-rated brands, catering to various preferences and budgets. These brands are often recognized for their quality, effectiveness, and absorption rates.
+
+Here are some of the top-rated whey protein brands and their key products:
+
+*   **Optimum Nutrition (ON) Gold Standard 100% Whey**
+    *   **Description**: This is a global favorite, known for its high brand trust and global standards. It's an isolate-dominated blend, providing approximat..."
+Standalone_NoSchema,top rated whey protein brands,3,True,15.617965936660767,False,0,Invalid JSON

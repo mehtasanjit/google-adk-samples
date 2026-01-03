@@ -1,0 +1,17 @@
+Agent,Query,Iteration,Success,Latency,Valid_JSON,Product_Count,Error
+LoopAgent,iphone 16 pro max price in india,1,True,11.647069215774536,True,1,
+LoopAgent,iphone 16 pro max price in india,2,True,16.913827657699585,True,1,
+LoopAgent,best running shoes under 5000 rupees,1,True,24.314191102981567,True,9,
+LoopAgent,best running shoes under 5000 rupees,2,True,77.63111329078674,True,9,
+SequentialAgent,iphone 16 pro max price in india,1,True,13.075517416000366,True,1,
+SequentialAgent,iphone 16 pro max price in india,2,True,14.760201454162598,True,1,
+SequentialAgent,best running shoes under 5000 rupees,1,True,24.80045485496521,True,13,
+SequentialAgent,best running shoes under 5000 rupees,2,True,30.125049829483032,True,18,
+Standalone_Schema,iphone 16 pro max price in india,1,True,3.7942938804626465,True,0,
+Standalone_Schema,iphone 16 pro max price in india,2,True,4.112534999847412,True,0,
+Standalone_Schema,best running shoes under 5000 rupees,1,True,3.6040618419647217,True,0,
+Standalone_Schema,best running shoes under 5000 rupees,2,True,5.97039532661438,True,5,
+Standalone_NoSchema,iphone 16 pro max price in india,1,True,11.884105682373047,False,0,Invalid JSON
+Standalone_NoSchema,iphone 16 pro max price in india,2,True,10.23594856262207,True,3,
+Standalone_NoSchema,best running shoes under 5000 rupees,1,True,11.685460090637207,False,0,Invalid JSON
+Standalone_NoSchema,best running shoes under 5000 rupees,2,True,21.3038969039917,False,0,Invalid JSON

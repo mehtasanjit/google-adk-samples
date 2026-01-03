@@ -1,0 +1,46 @@
+Agent,Query,Iteration,Success,Latency,Valid_JSON,Product_Count,Error
+LoopAgent,iphone 16 pro max price in india,1,20.35,1,,"{""user_query"": ""iphone 16 pro max price in india"", ""answer"": ""The iPhone 16 Pro Max was released on September 9, 2024. In India, its price ranges from approximately ₹1,34,900 for the 256GB variant to ₹1,79,900 for the 1TB variant."", ""products"": [{""name"": ""iPhone 16 Pro Max"", ""description"": ""Released on September 9, 2024. Features a 6.9-inch Super Retina XDR OLED display with a 120Hz ProMotion refresh rate and is powered by the Apple A18 Pro chip. It includes a triple camera system with a 48MP ma..."
+LoopAgent,iphone 16 pro max price in india,1,True,20.34644889831543,False,1,
+LoopAgent,iphone 16 pro max price in india,2,17.80,3,,"{""user_query"": ""iphone 16 pro max price in india"", ""answer"": ""The iPhone 16 Pro Max was launched in India with prices starting from \u20B91,44,900 for the 256GB variant. As of January 2, 2026, current prices are approximately \u20B91,34,900 for the 256GB, \u20B91,54,900 for the 512GB, and \u20B91,72,900 to \u20B91,75,900 for the 1TB variant. Prices can vary by retailer and color. Significant discounts were observed during sales events, such as Flipkart's Big Billion Days where the 256GB model wa..."
+LoopAgent,iphone 16 pro max price in india,2,True,17.795156478881836,False,3,
+LoopAgent,iphone 16 pro max price in india,3,14.92,3,,"{
+  ""user_query"": ""iphone 16 pro max price in india"",
+  ""answer"": ""The iPhone 16 Pro Max is available in India with varying prices depending on the storage capacity. The 256GB variant generally starts around ₹1,34,900, with some retailers listing it at ₹1,44,900. The 512GB model is priced around ₹1,54,900 to ₹1,64,900. The 1TB variant is typically around ₹1,74,900, with some offers bringing it down to ₹1,69,990. Deals with bank offers and exchange bonuses can significantly reduce the effective p..."
+LoopAgent,iphone 16 pro max price in india,3,True,14.920909881591797,False,3,
+LoopAgent,best running shoes under 5000 rupees,1,23.69,12,,"{""user_query"": ""best running shoes under 5000 rupees"", ""answer"": ""For running shoes under ₹5000 in India, several brands offer excellent options focusing on cushioning, durability, and support. Top recommendations include the Adidas Questar 3 for durability and a stable ride, Puma's Lite Pro V2 for lightweight and breathable design, Reebok Zig Dynamica 5 for value and traction, ASICS Gel Quantum 90 for high-performance road running, Nike Downshifter 10 for bounce-back effect, and Decathlon's Kal..."
+LoopAgent,best running shoes under 5000 rupees,1,True,23.691490411758423,False,12,
+LoopAgent,best running shoes under 5000 rupees,2,88.56,15,,"{
+  ""user_query"": ""best running shoes under 5000 rupees"",
+  ""answer"": ""For the best running shoes under ₹5000 in India, several brands offer excellent options focusing on comfort, durability, and performance. Top picks include models from Adidas, Nike, Puma, ASICS, Decathlon (Kalenji), and Skechers, with options suitable for various running needs and preferences."",
+  ""products"": [
+    {
+      ""name"": ""Adidas Duramo RC2"",
+      ""description"": ""Provides breathability, flexibility, and a balanced m..."
+LoopAgent,best running shoes under 5000 rupees,2,True,88.55967259407043,False,15,
+LoopAgent,best running shoes under 5000 rupees,3,23.39,8,,"{
+    ""user_query"": ""best running shoes under 5000 rupees"",
+    ""answer"": ""When looking for the best running shoes under ₹5,000 in India, several factors like comfort, cushioning, durability, and suitability for your running style are important. Top brands like Nike, Asics, Skechers, New Balance, Puma, Adidas, and Kalenji offer excellent options within this budget. Key considerations for choosing include cushioning for shock absorption, a comfortable and secure fit with a roomy toe box, durable ..."
+LoopAgent,best running shoes under 5000 rupees,3,True,23.390670776367188,False,8,
+LoopAgent,samsung s24 ultra vs pixel 9 pro comparison,1,49.01,2,,"{
+  ""user_query"": ""samsung s24 ultra vs pixel 9 pro comparison"",
+  ""answer"": ""The Samsung Galaxy S24 Ultra and Google Pixel 9 Pro are both flagship smartphones offering distinct advantages. The S24 Ultra excels with its powerful Snapdragon 8 Gen 3 processor, a brighter and more durable display, faster charging, and the integrated S Pen. The Pixel 9 Pro focuses on a refined Android experience with Google's Tensor G4 chip, superior computational photography, advanced AI features, and promises 7 ye..."
+LoopAgent,samsung s24 ultra vs pixel 9 pro comparison,1,True,49.00755286216736,False,2,
+LoopAgent,samsung s24 ultra vs pixel 9 pro comparison,2,40.82,2,,"{
+  ""user_query"": ""samsung s24 ultra vs pixel 9 pro comparison"",
+  ""answer"": ""The Samsung Galaxy S24 Ultra and Google Pixel 9 Pro are both leading Android flagships offering cutting-edge technology. The S24 Ultra, released in January 2024, is powered by a robust Snapdragon 8 Gen 3 processor, features a versatile 200MP quad-camera system with an S Pen, and boasts a bright 6.8-inch QHD+ display. The Pixel 9 Pro, released in September 2024, features Google's Tensor G4 processor and focuses on an ad..."
+LoopAgent,samsung s24 ultra vs pixel 9 pro comparison,2,True,40.822021484375,False,2,
+LoopAgent,samsung s24 ultra vs pixel 9 pro comparison,3,28.33,2,,"{""user_query"": ""samsung s24 ultra vs pixel 9 pro comparison"", ""answer"": ""The Samsung Galaxy S24 Ultra and the Google Pixel 9 Pro are both premium Android smartphones with distinct strengths. The S24 Ultra excels in raw performance with its Snapdragon 8 Gen 3, offers a versatile quad-camera system with advanced zoom, features a bright anti-glare display, and includes the unique S Pen. The Pixel 9 Pro stands out for its exceptional computational photography, clean and AI-enhanced Android experienc..."
+LoopAgent,samsung s24 ultra vs pixel 9 pro comparison,3,True,28.332464456558228,False,2,
+LoopAgent,reviews for sony wh-1000xm5,1,49.95,1,,"{
+  ""user_query"": ""reviews for sony wh-1000xm5"",
+  ""answer"": ""The Sony WH-1000XM5 headphones are widely praised for their excellent noise cancellation, rich and detailed sound quality, and significant improvements in call clarity. While offering good comfort and battery life, some users express concerns regarding their build quality, non-foldable design, and subjective comfort for certain head sizes. They remain a top contender, especially if found at a discount."",
+  ""products"": [
+    {
+      ""n..."
+LoopAgent,reviews for sony wh-1000xm5,1,True,49.948620319366455,False,1,
+LoopAgent,reviews for sony wh-1000xm5,2,39.90,0,,"{
+  ""user_query"": ""launch date for sony wh-1000xm5"",
+  ""answer"": ""The Sony WH-1000XM5 headphones were launched in India on September 21, 2022, and became available for purchase starting October 8, 2022. The global launch occurred in May 2022."",
+  ""products"": []
+}"
+LoopAgent,reviews for sony wh-1000xm5,2,True,39.898788928985596,False,0,

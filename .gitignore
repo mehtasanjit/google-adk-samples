@@ -132,6 +132,10 @@ dmypy.json
 ehthumbs.db
 Thumbs.db
 
+retailwiz/.adk
+retailwiz/.adk/session.db
 .gemini/
-data/
+.adk/
+.adk
+
 
