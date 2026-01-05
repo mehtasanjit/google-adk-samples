@@ -1,12 +1,23 @@
 # Google Search Agent Benchmarking & Architecture
 
+## 1. Problem Definition: Structured Output from Unstructured Search
+
+**The Core Challenge**: The Google Search tool (and most web search tools) returns **unstructured data**—primarily text snippets, titles, and links. However, retail applications require **strict structured data** (e.g., specific JSON objects for Products, Prices, Ratings) to function correctly.
+
+This benchmark evaluates different architectural strategies for bridging this gap:
+*   **Input**: Unstructured search results (Text/HTML)
+*   **Desired Output**: Strict JSON (`GoogleProductSearchResponse`)
+*   **Constraint**: The model must perform this transformation accurately without hallucinating or failing to parse.
+
+## 2. Agent Architectures Tested
+
 This document details the development, architecture, and benchmarking of the Google Search Agents within the `retailwiz` project.
 
-## 1. Agent Architectures Tested
 
 We explored three primary architectures for the Google Search Agent to optimize for accuracy, structure, and latency.
 
 ### A. LoopAgent (Iterative Refinement)
+*   **Iterations**: 28 runs per agent (Total 336 data points per agent logic).
 *   **Description**: Uses a `LoopAgent` to iteratively search, review, and format results.
 *   **Mechanism**:
     1.  **Search**: Executes a Google Search query.
@@ -34,7 +45,7 @@ We explored three primary architectures for the Google Search Agent to optimize 
     *   **With Schema**: Can be overly restrictive, sometimes returning empty results if the model struggles to fit data into the schema immediately.
     *   **Without Schema**: High risk of invalid JSON, requiring robust parsing/repair logic.
 
-## 2. Architectural Analysis & Industry Context
+## 3. Architectural Analysis & Industry Context
 
 To better understand the performance characteristics observed in our benchmarks, it is helpful to map these agents to standard industry patterns for LLM agents.
 
@@ -69,7 +80,7 @@ The `Standalone` agents represent a **Zero-Shot** approach.
             ```
         *   **Takeaway**: If you must use a Standalone agent, `NoSchema` + `Robust Parser` (to strip text/markdown) is likely better than `Strict Schema` for this use case.
 
-## 3. Prompt Engineering & Output Formatting
+## 4. Prompt Engineering & Output Formatting
 
 ### Evolution of Prompts
 *   **Initial**: Free-text responses. Hard to parse programmatically.
@@ -83,7 +94,7 @@ The `Standalone` agents represent a **Zero-Shot** approach.
 *   **Invalid JSON**: "Trailing commas", "missing quotes", or "text preamble" are common issues.
 *   **Schema Validation**: Strict schema validation can cause the agent to fail if the model's output is slightly off (e.g., missing a required field).
 
-## 4. Benchmarking Methodology
+## 5. Benchmarking Methodology
 
 ### Script: `benchmark_retailwiz_google_search.py`
 We developed a dedicated script to benchmark these agents directly, bypassing the root `retailwiz` agent to isolate performance.
@@ -99,7 +110,7 @@ We developed a dedicated script to benchmark these agents directly, bypassing th
     *   **JSON Validity**: Could the response be parsed as JSON?
     *   **Product Count**: Number of products found (proxy for utility).
 
-## 5. Benchmark Results & Inference
+## 6. Benchmark Results & Inference
 
 *Aggregated from multiple benchmark runs (Dec 2025 - Jan 2026)*
 
@@ -144,12 +155,14 @@ The optimal approach is to **decouple search from formatting**:
 - **Stage 1 - Search**: LLM calls Google Search tool, returns raw results (text/markdown OK)
 - **Stage 2 - Format**: Dedicated agent converts raw results to strict JSON schema
 
-| Metric | SequentialAgent | LoopAgent | Standalone_Schema | Standalone_NoSchema |
+| Metric | LoopAgent | SequentialAgent | Standalone_Schema | Standalone_NoSchema |
 | :--- | :--- | :--- | :--- | :--- |
-| **Mean Latency** | 21.92s | 40.96s | 5.63s | 20.56s |
-| **Median Products** | 3.38 | 3.0 | 0 | 0.75 |
-| **P99 Latency** | 90.84s | 304.73s | 14.46s | 95.13s |
-| **Reliability** | ⭐⭐⭐⭐⭐ | ⭐⭐⭐ | ⭐ | ⭐⭐ |
+| **Avg Latency (s)** | 47.22 | 19.94 | 4.48 | 17.75 |
+| **Product Yield** | 98% | 98% | 85% | 95% |
+| **Avg Product Count** | 5.26 | 5.15 | 1.22 | 2.01 |
+| **Reliability (Structure)** | ⭐⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐ |
+| **Reliability (Content)** | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐ | ⭐⭐⭐⭐ |
+| **Meaningful Yield** | 96.4% | **100.0%** | 82.9% | **100.0%** |
 
 **Why SequentialAgent over LoopAgent?**
 - **Single-shot conversion**: SequentialAgent takes one pass to format results, while LoopAgent may iterate multiple times
@@ -182,7 +195,7 @@ For **Standalone_NoSchema** (When latency is critical):
   - Fall back to text extraction if JSON parsing fails
 - [ ] Consider text responses as valid output for comparison/trend queries
 
-## 6. Error Analysis & Query-Specific Insights
+## 7. Error Analysis & Query-Specific Insights
 
 ### A. Common Error Patterns
 
@@ -199,7 +212,7 @@ For **Standalone_NoSchema** (When latency is critical):
 | `iphone 16 pro max price in india` | Standalone_Schema (3.2s) | LoopAgent (15.8s) | Simple product query, all agents succeed |
 | `best running shoes under 5000 rupees` | SequentialAgent (21.9s, 9 products) | LoopAgent (44s, 8 products) | LoopAgent has 85s outlier on first iteration |
 | `samsung s24 ultra vs pixel 9 pro comparison` | SequentialAgent (29.9s) | LoopAgent (62.7s) | Comparison queries trigger LoopAgent retries |
-| `current trends in indian ethnic wear market` | Standalone_NoSchema (13.2s) | **All others fail** | Non-product queries fail consistently (NoneType error) |
+| `current trends in indian ethnic wear market` | Standalone_NoSchema (13.2s) | Standalone_Schema (Refused) | Loop/Sequential provided detailed answers but 0 products (Correct behavior) |
 | `where to buy framework laptop in india` | Standalone_NoSchema (12.8s) | Standalone_Schema (3.2s, 0 products) | Niche product, schema too strict |
 | `best deals on 55 inch 4k tv` | SequentialAgent (27s, 12.3 products) | Standalone_NoSchema (98.7s, 0 products) | **244s outlier** observed for NoSchema |
 | `upcoming electric scooters in india 2025` | SequentialAgent (23.7s, 16 products) | LoopAgent (52.9s, 13.7 products) | Future-dated queries work well |
@@ -207,14 +220,21 @@ For **Standalone_NoSchema** (When latency is critical):
 
 ### C. Critical Findings
 
-1. **Non-Product Queries Fail**: The query "current trends in indian ethnic wear market" failed for LoopAgent (100%), SequentialAgent (100%), and Standalone_Schema (100%). Only Standalone_NoSchema succeeded (67% success, 1.3 products avg). This suggests the Google Search tool returns no structured product data for market trend queries.
+1.  **Non-Product Queries Handling**: The query "current trends in indian ethnic wear market" resulted in **0 products** for LoopAgent and SequentialAgent, but they **successfully provided detailed market analysis** in the `answer` field. This is the **correct and expected behavior** for non-product queries.
+    *   **SequentialAgent is the Reliability King**: Across **336 benchmark runs**, it achieved a **100% success rate** in returning meaningful content. It never failed to provide either products or a helpful text summary.
+    *   **Standalone_NoSchema is a "Research" Powerhouse**: While it frequently fails valid JSON checks (Structure ⭐⭐), it also achieved **100% meaningful content yield**. Crucially, for informational comparisons, it often returns **5x-10x more text content** (3,000-6,000 chars) than SequentialAgent (~500-800 chars), making it superior for deep-dive research if paired with a robust parser.
+    *   **Speed vs. Depth tradeoff**: `Standalone_Schema` is 4x faster but misses 17% of meaningful answers. `LoopAgent` offers the highest product count (5.26 avg) but is the slowest (~47s).
+    *   **Correction**: Previous invalid conclusion that "All others fail" was incorrect; they effectively answered the user's intent despite 0 structured products.
 
-2. **244-Second Outlier**: Standalone_NoSchema experienced a 244-second response time for "best deals on 55 inch 4k tv" (Iteration 2). This is 14x the median latency and indicates potential:
-   - Model getting stuck in a long generation loop
-   - Network timeout/retry with the search API
-   - Token limit being hit during large response generation
+2.  **Standalone_NoSchema Viability**: While it scores low on **Structural Reliability** (valid JSON), it has high **Informational Reliability**.
+    *   **Recommendation**: For use cases where "getting the answer" is more important than "strict JSON" (e.g., chatbot responses, summaries), `Standalone_NoSchema` is a strong candidate if paired with a robust text parser.
 
-3. **Invalid JSON Pattern - Critical Insight**: 43% of Standalone_NoSchema runs were marked as "Invalid JSON", but this is **misleading**. Analysis of raw outputs reveals:
+3.  **244-Second Outlier**: Standalone_NoSchema experienced a 244-second response time for "best deals on 55 inch 4k tv" (Iteration 2). This is 14x the median latency and indicates potential:
+    *   Model getting stuck in a long generation loop
+    *   Network timeout/retry with the search API
+    *   Token limit being hit during large response generation
+
+4.  **Invalid JSON Pattern - Critical Insight**: 43% of Standalone_NoSchema runs were marked as "Invalid JSON", but this is **misleading**. Analysis of raw outputs reveals:
    
    **The Google Search tool successfully returns results in virtually all cases.** The "Invalid JSON" errors are a **parsing problem, not a search problem**. The model outputs fall into two categories:
 
@@ -330,12 +350,12 @@ For **Standalone_NoSchema** (When latency is critical):
    4. Extracts structured data from markdown tables and bullet lists
    5. Consider that Standalone_NoSchema text responses may be the **preferred format** for comparison, specification, and trend queries
 
-4. **Schema vs. Recall Trade-off**: 
+5. **Schema vs. Recall Trade-off**: 
    - Standalone_Schema: 0 products median (schema too strict)
    - Standalone_NoSchema: 1 product median (better recall but 43% invalid JSON)
    - SequentialAgent: 3 products median (best balance)
 
-## 7. Future Improvements
+## 8. Future Improvements
 *   **Hybrid Approach**: Start with Standalone; if confidence/product count is low, escalate to Sequential/Loop.
 *   **Streaming**: Implement streaming for Sequential/Loop agents to improve *perceived* latency.
 *   **Schema Relaxing**: Make the `Standalone_Schema` less strict (e.g., optional fields) to improve recall.

@@ -51,7 +51,9 @@ QUERIES = [
     "where to buy framework laptop in india",
     "best deals on 55 inch 4k tv",
     "upcoming electric scooters in india 2025",
-    "top rated whey protein brands"
+    "top rated whey protein brands",
+    "dior bags in India",
+    "Michael Kors vs. Coach vs. Tory Burch"
 ]
 
 AGENTS = {
@@ -61,7 +63,7 @@ AGENTS = {
     "Standalone_NoSchema": google_product_search_agent_standalone_wo_output_schema
 }
 
-ITERATIONS = 7
+ITERATIONS = 28
 
 def calculate_stats(values: List[float]) -> Dict[str, float]:
     if not values:

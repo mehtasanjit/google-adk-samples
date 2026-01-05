@@ -1,9 +1,0 @@
-Agent,Metric,Mean,P5,P50,P95,P99
-LoopAgent,Latency,29.87477992375692,15.219039595127105,21.76058304309845,71.26114469766615,102.73123870849612
-LoopAgent,Product_Count,5.6,0.0,3.0,17.0,17.0
-SequentialAgent,Latency,18.038395881652832,11.498673069477082,15.476819634437561,31.278886723518365,34.173179240226744
-SequentialAgent,Product_Count,3.5454545454545454,0.0,1.0,15.95,16.79
-Standalone_Schema,Latency,0,0,0,0,0
-Standalone_Schema,Product_Count,0,0,0,0,0
-Standalone_NoSchema,Latency,0,0,0,0,0
-Standalone_NoSchema,Product_Count,0,0,0,0,0
