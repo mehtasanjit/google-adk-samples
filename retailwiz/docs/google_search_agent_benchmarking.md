@@ -128,7 +128,7 @@ We developed a dedicated script to benchmark these agents directly, bypassing th
 | **SequentialAgent** | 6.29 | 0.5 | 3.38 | 17.94 | 24.04 | **Highest Yield**. Consistently finds products, high ceiling. Best balance of speed and results. |
 | **LoopAgent** | 6.09 | 0.33 | 3.0 | 17.53 | 20.46 | Good yield with detailed outputs, but inconsistent due to retry behavior. |
 | **Standalone_Schema** | 1.83 | 0.0 | 0.0 | 7.22 | 8.71 | **Low Yield**. Median is 0 (schema too strict, often fails to return products). |
-| **Standalone_NoSchema** | 2.23 | 0.0 | 0.75 | 10.24 | 12.57 | Low median. Higher recall than Schema variant, but often returns invalid JSON. |
+| **Standalone_NoSchema** | 2.23 | 0.0 | 0.75 | 10.24 | 12.57 | Low median. Often substitutes structured products with **rich description text** (100% meaningful yield). |
 
 ### Key Takeaways & Recommendations
 
@@ -138,8 +138,8 @@ We developed a dedicated script to benchmark these agents directly, bypassing th
 
 | Configuration | Product Success Rate | Median Products | Why? |
 | :--- | :--- | :--- | :--- |
-| **Search + Schema** | ~10% | 0 | Model struggles to simultaneously search AND format to strict schema. Often gives up entirely. |
-| **Search (No Schema)** | ~70-90% | 1-2 | Model focuses on finding data. Returns rich text/markdown with product info, but not JSON-conformant. |
+| **Search + Schema** | **~33%** | 0 | Model struggles to simultaneously search AND format to strict schema. Often gives up entirely. |
+| **Search (No Schema)** | **~50%** (Structured)<br>**100%** (Text Yield) | 1-2 | Model focuses on finding data. Returns rich text/markdown with product info, but often not JSON-conformant. |
 
 **Root Cause**: When constrained by a strict schema, the model's attention is split between (a) processing search results and (b) adhering to JSON syntax. If it cannot perfectly format messy search data into the required structure, it "fails safely" by returning nothing rather than partial data.
 
@@ -157,12 +157,17 @@ The optimal approach is to **decouple search from formatting**:
 
 | Metric | LoopAgent | SequentialAgent | Standalone_Schema | Standalone_NoSchema |
 | :--- | :--- | :--- | :--- | :--- |
-| **Avg Latency (s)** | 47.22 | 19.94 | 4.48 | 17.75 |
-| **Product Yield** | 98% | 98% | 85% | 95% |
-| **Avg Product Count** | 5.26 | 5.15 | 1.22 | 2.01 |
+| **Avg Latency** | 47.22s | 19.94s | 4.48s | 17.75s |
+| **Structured Product Yield** | 77% | 76% | 33% | 51% |
+| **Informational Text Yield*** | 20% | 24% | 50% | 49% |
+| **Total Meaningful Success** | **96%** | **100%** | 83% | **100%** |
 | **Reliability (Structure)** | ⭐⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐ |
 | **Reliability (Content)** | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐ | ⭐⭐⭐⭐ |
-| **Meaningful Yield** | 96.4% | **100.0%** | 82.9% | **100.0%** |
+
+> **\*Note on Yield Metrics**: 
+> *   **Structured Product Yield**: The % of runs where the agent successfully found and parsed specific products (e.g., iPhone 16 price).
+> *   **Informational Text Yield**: The % of runs where the agent returned **0 products** but provided a **meaningful, detailed text answer** (e.g., for "market trends" or "complex comparisons"). 
+> *   *Crucial Insight*: A lower "Product Yield" does NOT imply failure if the "Informational Text Yield" compensates for it. For example, `Standalone_NoSchema` has only 51% product yield but makes up for it with 49% rich text answers, achieving 100% total success.
 
 **Why SequentialAgent over LoopAgent?**
 - **Single-shot conversion**: SequentialAgent takes one pass to format results, while LoopAgent may iterate multiple times
@@ -355,7 +360,44 @@ For **Standalone_NoSchema** (When latency is critical):
    - Standalone_NoSchema: 1 product median (better recall but 43% invalid JSON)
    - SequentialAgent: 3 products median (best balance)
 
-## 8. Future Improvements
-*   **Hybrid Approach**: Start with Standalone; if confidence/product count is low, escalate to Sequential/Loop.
-*   **Streaming**: Implement streaming for Sequential/Loop agents to improve *perceived* latency.
-*   **Schema Relaxing**: Make the `Standalone_Schema` less strict (e.g., optional fields) to improve recall.
+
+## 9. Deep Dive: Schema Hallucinations & Parsing Analysis
+
+Recent analysis (Jan 2026) using a robust parsing script (`analyze_schema_vs_noschema.py`) revealed critical insights into **why** `Standalone_Schema` fails and verified the reliability of `SequentialAgent`.
+
+### A. The "Type Hallucination" Problem
+When a Single-Turn agent is forced to output a specific JSON schema (e.g., `list[Product]`), it often treats abstract concepts as "Products" to satisfy the schema constraint, especially for informational queries.
+
+*   **Query**: "current trends in indian ethnic wear market"
+*   **SequentialAgent**: Correctly returned **0 products**, provided text summary of trends (Correct).
+*   **Standalone_Schema**: Hallucinated "concepts" as products.
+    *   *Result*: `[{"name": "pastel color palettes"}, {"name": "comfortable & lightweight fabrics"}]`
+    *   *Impact*: Downstream systems would treat "pastel colors" as a purchasable SKU.
+
+### B. The "Recall vs. Precision" Gap
+`SequentialAgent` consistently found significantly more valid products than `Standalone_Schema` for product-heavy queries.
+
+*   **Query**: "top rated whey protein brands"
+*   **SequentialAgent Yield**: ~14.4 products (High Recall)
+*   **Standalone_Schema Yield**: ~2.4 products (Low Recall)
+*   **Reason**: The Single-Turn agent incurs a heavy cognitive load trying to search AND format simultaneously. It likely hits context limits or "gives up" early to ensure JSON validity, truncating the list. The Sequential pipeline allows the "Search" step to return a massive raw dump, which the "Format" step then meticulously parses.
+
+### C. Robust Parsing Findings
+Initial benchmarks reported "0 products" for many agents due to varying output formats. Robust parsing corrected this:
+*   **Loop/Sequential**: Often wrap valid JSON in a stringified field inside `raw_content`.
+*   **Standalone_NoSchema**: Wraps JSON in ` ```json ... ``` ` blocks or mixes it with conversational text.
+*   **Takeaway**: Production systems MUST implement robust parsing logic (Dict -> String Parse -> Regex extraction) to handle these variations, rather than relying on clean JSON.
+
+### D. Final Verdict & Recommendations
+
+1.  **SequentialAgent**: **The Production Standard**.
+    *   It is the **ONLY** architecture that **deterministically** distinguishes between "Informational" (0 products) and "Transactional" (N products) intent without hallucinating types.
+    *   **Recommendation**: Use for all customer-facing search features where data integrity is paramount.
+
+2.  **Standalone_NoSchema**: **The "Research" Specialist**.
+    *   It excels at deep-dive information gathering (100% meaningul content) but requires robust post-processing.
+    *   **Why not the primary choice?** It occasionally blurs the line, returning "concepts" as products (avg 1.9 products for trend queries vs Sequential's 0.0), requiring complex heuristic filtering.
+    *   **Recommendation**: Use for "Chat" or "Ask a Question" features where a text response is the primary goal and structured citations are a "nice to have".
+
+3.  **Standalone_Schema**: **Avoid**.
+    *   Too unreliable for general-purpose search due to strict constraint failures.
