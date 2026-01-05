@@ -392,6 +392,8 @@ Initial benchmarks reported "0 products" for many agents due to varying output f
 
 1.  **SequentialAgent**: **The Production Standard**.
     *   It is the **ONLY** architecture that **deterministically** distinguishes between "Informational" (0 products) and "Transactional" (N products) intent without hallucinating types.
+        *   **Mechanism**: By separating *Search* (Data gathering) from *Formatting* (Schema mapping), the Formatting agent acts as a strict "Semantic Filter." If the search results describe concepts (e.g., "trends"), the formatter correctly returns an empty product list.
+        *   **Contrast**: Single-turn agents often feel "pressured" by the schema prompt to populate the list, leading them to hallucinate abstract concepts (e.g., "Sustainable Fabrics", "Pastel Colors") as purchasable products just to satisfy the `list[Product]` requirement.
     *   **Recommendation**: Use for all customer-facing search features where data integrity is paramount.
 
 2.  **Standalone_NoSchema**: **The "Research" Specialist**.
